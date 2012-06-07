@@ -113,16 +113,10 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">EFP atom info.  <a href="structefp__atom.html#details">More...</a><br/></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structefp__qm__data.html">efp_qm_data</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information about <em>ab</em> <em>initio</em> region.  <a href="structefp__qm__data.html#details">More...</a><br/></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structefp__st__block.html">efp_st_block</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information about a block of atoms for overlap and kinetic energy integral computation by <a class="el" href="structefp__callbacks.html#a2a1191d8107f73650ead02838a73ba2a" title="Callback function, see efp_st_integrals_fn.">efp_callbacks::get_st_integrals</a> callback function.  <a href="structefp__st__block.html#details">More...</a><br/></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structefp__st__data.html">efp_st_data</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overlap and kinetic energy integrals data.  <a href="structefp__st__data.html#details">More...</a><br/></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structefp__callbacks.html">efp_callbacks</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function information.  <a href="structefp__callbacks.html#details">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a42e796db9ef2334314df32fef87b15ad"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#a42e796db9ef2334314df32fef87b15ad">efp_st_integrals_fn</a> )(const struct <a class="el" href="structefp__st__block.html">efp_st_block</a> *block, int compute_derivatives, struct <a class="el" href="structefp__st__data.html">efp_st_data</a> *st, void *user_data)</td></tr>
-<tr class="memdesc:a42e796db9ef2334314df32fef87b15ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute overlap and kinetic energy integrals over Gaussian basis functions.  <a href="#a42e796db9ef2334314df32fef87b15ad"></a><br/></td></tr>
 <tr class="memitem:a07a28615fc1caa92e20185991daa2fe9"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#a07a28615fc1caa92e20185991daa2fe9">efp_electron_density_field_fn</a> )(int n_pt, const double *xyz, double *field, void *user_data)</td></tr>
 <tr class="memdesc:a07a28615fc1caa92e20185991daa2fe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute electric field form electrons in the specified points.  <a href="#a07a28615fc1caa92e20185991daa2fe9"></a><br/></td></tr>
 <tr class="memitem:a2d49cce051d4a6d389158b560135deff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d49cce051d4a6d389158b560135deff"></a>
@@ -144,22 +138,21 @@ Enumerations</h2></td></tr>
 <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba10957804458bc2381a94f6db4a489fab">EFP_RESULT_FILE_NOT_FOUND</a>, 
 <br/>
 &#160;&#160;<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba0cfb03bb61085621733bbf96dde458fc">EFP_RESULT_SYNTAX_ERROR</a>, 
-<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75ebaaeda4168b0d4d80964c2ec08577a68a4">EFP_RESULT_BASIS_NOT_SPECIFIED</a>, 
+<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba9db5510e219a95db4dcf239e0f129f15">EFP_RESULT_UNKNOWN_FRAGMENT</a>, 
 <br/>
-&#160;&#160;<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba9db5510e219a95db4dcf239e0f129f15">EFP_RESULT_UNKNOWN_FRAGMENT</a>, 
-<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba08630988986ba30deda77ca9902ce69d">EFP_RESULT_DUPLICATE_PARAMETERS</a>, 
+&#160;&#160;<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba08630988986ba30deda77ca9902ce69d">EFP_RESULT_DUPLICATE_PARAMETERS</a>, 
+<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75ebaff9c8705d1956be569b907e57d09c69e">EFP_RESULT_CALLBACK_NOT_SET</a>, 
 <br/>
-&#160;&#160;<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75ebaff9c8705d1956be569b907e57d09c69e">EFP_RESULT_CALLBACK_NOT_SET</a>, 
-<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba51e81b0776a8fdcd2061348b1a852d49">EFP_RESULT_CALLBACK_FAILED</a>, 
+&#160;&#160;<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba51e81b0776a8fdcd2061348b1a852d49">EFP_RESULT_CALLBACK_FAILED</a>, 
+<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75ebabf06777411a626046dc2ce41840ac749">EFP_RESULT_OVERLAP_INTEGRALS_REQUIRED</a>, 
 <br/>
-&#160;&#160;<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75ebabf06777411a626046dc2ce41840ac749">EFP_RESULT_OVERLAP_INTEGRALS_REQUIRED</a>, 
-<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75ebaf0a6567aa3ffd1e7bf94f6bbdbb63605">EFP_RESULT_GRADIENT_NOT_REQUESTED</a>, 
+&#160;&#160;<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75ebaf0a6567aa3ffd1e7bf94f6bbdbb63605">EFP_RESULT_GRADIENT_NOT_REQUESTED</a>, 
+<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba6d6f5686740dd81de8aa056b40f6e84e">EFP_RESULT_PARAMETERS_MISSING</a>, 
 <br/>
-&#160;&#160;<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba6d6f5686740dd81de8aa056b40f6e84e">EFP_RESULT_PARAMETERS_MISSING</a>, 
-<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba7741ba2c2bc1d8abc29a4a24d1c99d9d">EFP_RESULT_INVALID_ARRAY_SIZE</a>, 
+&#160;&#160;<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba7741ba2c2bc1d8abc29a4a24d1c99d9d">EFP_RESULT_INVALID_ARRAY_SIZE</a>, 
+<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba0031d43e67393283bcd21ee16c50aec4">EFP_RESULT_UNSUPPORTED_SCREEN</a>, 
 <br/>
-&#160;&#160;<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba0031d43e67393283bcd21ee16c50aec4">EFP_RESULT_UNSUPPORTED_SCREEN</a>, 
-<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba740b2c0a94f90cb2137f3e2acca4bda6">EFP_RESULT_INCONSISTENT_TERMS</a>
+&#160;&#160;<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba740b2c0a94f90cb2137f3e2acca4bda6">EFP_RESULT_INCONSISTENT_TERMS</a>
 <br/>
  }</td></tr>
 <tr class="memdesc:a7bbdafa442aaefa9561740540b1c75eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result of an operation.  <a href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">More...</a><br/></td></tr>
@@ -199,16 +192,16 @@ Functions</h2></td></tr>
 <tr class="memdesc:a3847f58a514abe3b7f090519f60f0b7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the EFP computation.  <a href="#a3847f58a514abe3b7f090519f60f0b7b"></a><br/></td></tr>
 <tr class="memitem:ac93f00d9aca8cf26dc948a7d60eaccd2"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#ac93f00d9aca8cf26dc948a7d60eaccd2">efp_update_qm_data</a> (struct <a class="el" href="structefp.html">efp</a> *<a class="el" href="structefp.html">efp</a>, const struct <a class="el" href="structefp__qm__data.html">efp_qm_data</a> *qm_data)</td></tr>
 <tr class="memdesc:ac93f00d9aca8cf26dc948a7d60eaccd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update information about <em>ab</em> <em>initio</em> region.  <a href="#ac93f00d9aca8cf26dc948a7d60eaccd2"></a><br/></td></tr>
-<tr class="memitem:a9bb2c32789df21f8547596ace2b88d10"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#a9bb2c32789df21f8547596ace2b88d10">efp_update_fragments</a> (struct <a class="el" href="structefp.html">efp</a> *<a class="el" href="structefp.html">efp</a>, const double *xyzabc)</td></tr>
-<tr class="memdesc:a9bb2c32789df21f8547596ace2b88d10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update positions and orientations of effective fragments.  <a href="#a9bb2c32789df21f8547596ace2b88d10"></a><br/></td></tr>
-<tr class="memitem:a169e6bbf44edcf4d40454fdf9ffcb6eb"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#a169e6bbf44edcf4d40454fdf9ffcb6eb">efp_update_fragments_2</a> (struct <a class="el" href="structefp.html">efp</a> *<a class="el" href="structefp.html">efp</a>, const double *pts)</td></tr>
-<tr class="memdesc:a169e6bbf44edcf4d40454fdf9ffcb6eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update positions and orientations of effective fragments.  <a href="#a169e6bbf44edcf4d40454fdf9ffcb6eb"></a><br/></td></tr>
+<tr class="memitem:a557746b2d07da91d1b6d79eede1344ed"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#a557746b2d07da91d1b6d79eede1344ed">efp_set_coordinates</a> (struct <a class="el" href="structefp.html">efp</a> *<a class="el" href="structefp.html">efp</a>, const double *xyzabc)</td></tr>
+<tr class="memdesc:a557746b2d07da91d1b6d79eede1344ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update positions and orientations of effective fragments.  <a href="#a557746b2d07da91d1b6d79eede1344ed"></a><br/></td></tr>
+<tr class="memitem:a43ce775d18baac407e498a9b764b57ce"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#a43ce775d18baac407e498a9b764b57ce">efp_set_coordinates_2</a> (struct <a class="el" href="structefp.html">efp</a> *<a class="el" href="structefp.html">efp</a>, const double *pts)</td></tr>
+<tr class="memdesc:a43ce775d18baac407e498a9b764b57ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update positions and orientations of effective fragments.  <a href="#a43ce775d18baac407e498a9b764b57ce"></a><br/></td></tr>
 <tr class="memitem:a933cf8bc1f31a87295774eff25963866"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#a933cf8bc1f31a87295774eff25963866">efp_scf_init</a> (struct <a class="el" href="structefp.html">efp</a> *<a class="el" href="structefp.html">efp</a>)</td></tr>
 <tr class="memdesc:a933cf8bc1f31a87295774eff25963866"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize SCF computation.  <a href="#a933cf8bc1f31a87295774eff25963866"></a><br/></td></tr>
 <tr class="memitem:a23deab9ea2c2c5c92d1233ed1296e7ae"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#a23deab9ea2c2c5c92d1233ed1296e7ae">efp_scf_update</a> (struct <a class="el" href="structefp.html">efp</a> *<a class="el" href="structefp.html">efp</a>, double *energy)</td></tr>
 <tr class="memdesc:a23deab9ea2c2c5c92d1233ed1296e7ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update wave function dependent energy terms.  <a href="#a23deab9ea2c2c5c92d1233ed1296e7ae"></a><br/></td></tr>
-<tr class="memitem:a7df4c7232bf34b1ebfabd9559e20be6e"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#a7df4c7232bf34b1ebfabd9559e20be6e">efp_compute</a> (struct <a class="el" href="structefp.html">efp</a> *<a class="el" href="structefp.html">efp</a>)</td></tr>
-<tr class="memdesc:a7df4c7232bf34b1ebfabd9559e20be6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform the EFP computation.  <a href="#a7df4c7232bf34b1ebfabd9559e20be6e"></a><br/></td></tr>
+<tr class="memitem:a89b33171a885629ee53d9e8ca6af4497"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#a89b33171a885629ee53d9e8ca6af4497">efp_compute</a> (struct <a class="el" href="structefp.html">efp</a> *<a class="el" href="structefp.html">efp</a>, int do_gradient)</td></tr>
+<tr class="memdesc:a89b33171a885629ee53d9e8ca6af4497"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform the EFP computation.  <a href="#a89b33171a885629ee53d9e8ca6af4497"></a><br/></td></tr>
 <tr class="memitem:aa7de71bfcf26cf93eabf821ac2e2cc1c"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#aa7de71bfcf26cf93eabf821ac2e2cc1c">efp_qm_contribution</a> (struct <a class="el" href="structefp.html">efp</a> *<a class="el" href="structefp.html">efp</a>, int n_basis, double *v)</td></tr>
 <tr class="memdesc:aa7de71bfcf26cf93eabf821ac2e2cc1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute one-electron contributions to QM Hamiltonian from EFP fragments.  <a href="#aa7de71bfcf26cf93eabf821ac2e2cc1c"></a><br/></td></tr>
 <tr class="memitem:a90b542f2392be9e0d47e0a0f41779c1e"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#a90b542f2392be9e0d47e0a0f41779c1e">efp_get_energy</a> (struct <a class="el" href="structefp.html">efp</a> *<a class="el" href="structefp.html">efp</a>, struct <a class="el" href="structefp__energy.html">efp_energy</a> *energy)</td></tr>
@@ -229,31 +222,6 @@ Functions</h2></td></tr>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Public libefp interface. </p>
 </div><hr/><h2>Typedef Documentation</h2>
-<a class="anchor" id="a42e796db9ef2334314df32fef87b15ad"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a>(* <a class="el" href="efp_8h.html#a42e796db9ef2334314df32fef87b15ad">efp_st_integrals_fn</a>)(const struct <a class="el" href="structefp__st__block.html">efp_st_block</a> *block, int compute_derivatives, struct <a class="el" href="structefp__st__data.html">efp_st_data</a> *st, void *user_data)</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Compute overlap and kinetic energy integrals over Gaussian basis functions. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">block</td><td>Block information (see <a class="el" href="structefp__st__block.html" title="Information about a block of atoms for overlap and kinetic energy integral computation by efp_callbac...">efp_st_block</a>). </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">compute_derivatives</td><td>If nonzero also compute integral derivatives. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">st</td><td>Structure where integrals should be stored (see <a class="el" href="structefp__st__data.html" title="Overlap and kinetic energy integrals data.">efp_st_data</a>). </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">user_data</td><td>User data which was specified during initialization.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns:</dt><dd><a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba51e81b0776a8fdcd2061348b1a852d49" title="Call to callback function failed.">EFP_RESULT_CALLBACK_FAILED</a> on error or <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba2e840136673d27ffd986fcde8ad2e670" title="Operation was successful.">EFP_RESULT_SUCCESS</a> otherwise. </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="a07a28615fc1caa92e20185991daa2fe9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -313,9 +281,6 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a7bbdafa442aaefa9561740540b1c75eba0cfb03bb61085621733bbf96dde458fc"></a>EFP_RESULT_SYNTAX_ERROR</em>&nbsp;</td><td>
 <p>Syntax error in EFP parameters file. </p>
-</td></tr>
-<tr><td valign="top"><em><a class="anchor" id="a7bbdafa442aaefa9561740540b1c75ebaaeda4168b0d4d80964c2ec08577a68a4"></a>EFP_RESULT_BASIS_NOT_SPECIFIED</em>&nbsp;</td><td>
-<p>The basis name in EFP parameters file was not specified. </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a7bbdafa442aaefa9561740540b1c75eba9db5510e219a95db4dcf239e0f129f15"></a>EFP_RESULT_UNKNOWN_FRAGMENT</em>&nbsp;</td><td>
 <p>Unknown fragment type. </p>
@@ -595,12 +560,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a9bb2c32789df21f8547596ace2b88d10"></a>
+<a class="anchor" id="a557746b2d07da91d1b6d79eede1344ed"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a> <a class="el" href="efp_8h.html#a9bb2c32789df21f8547596ace2b88d10">efp_update_fragments</a> </td>
+          <td class="memname">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a> <a class="el" href="efp_8h.html#a557746b2d07da91d1b6d79eede1344ed">efp_set_coordinates</a> </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structefp.html">efp</a> *&#160;</td>
           <td class="paramname"><em>efp</em>, </td>
@@ -632,12 +597,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a169e6bbf44edcf4d40454fdf9ffcb6eb"></a>
+<a class="anchor" id="a43ce775d18baac407e498a9b764b57ce"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a> <a class="el" href="efp_8h.html#a169e6bbf44edcf4d40454fdf9ffcb6eb">efp_update_fragments_2</a> </td>
+          <td class="memname">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a> <a class="el" href="efp_8h.html#a43ce775d18baac407e498a9b764b57ce">efp_set_coordinates_2</a> </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structefp.html">efp</a> *&#160;</td>
           <td class="paramname"><em>efp</em>, </td>
@@ -658,7 +623,7 @@ Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Update positions and orientations of effective fragments. </p>
-<p>This is a convenience function. It does the same as efp_update_fragments. However to specify position and orientation of fragments it takes coordinates of 3 points in space for each fragment. For each fragment point 1 and first atom of fragment are made to coincide. The vector connecting points 1 and 2 is aligned with the corresponding vector connecting fragment atoms. The plane defined by points 1, 2, and 3 is made to coincide with the corresponding fragment plane.</p>
+<p>This is a convenience function. It does the same as efp_set_coordinates. However to specify position and orientation of fragments it takes coordinates of 3 points in space for each fragment. For each fragment point 1 and first atom of fragment are made to coincide. The vector connecting points 1 and 2 is aligned with the corresponding vector connecting fragment atoms. The plane defined by points 1, 2, and 3 is made to coincide with the corresponding fragment plane.</p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">efp</td><td>The efp structure. </td></tr>
@@ -735,16 +700,26 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7df4c7232bf34b1ebfabd9559e20be6e"></a>
+<a class="anchor" id="a89b33171a885629ee53d9e8ca6af4497"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a> <a class="el" href="efp_8h.html#a7df4c7232bf34b1ebfabd9559e20be6e">efp_compute</a> </td>
+          <td class="memname">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a> <a class="el" href="efp_8h.html#a89b33171a885629ee53d9e8ca6af4497">efp_compute</a> </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structefp.html">efp</a> *&#160;</td>
-          <td class="paramname"><em>efp</em></td><td>)</td>
+          <td class="paramname"><em>efp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>do_gradient</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>
@@ -754,7 +729,8 @@ Functions</h2></td></tr>
 <p>This call can take long time to complete.</p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">efp</td><td>The efp structure.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">efp</td><td>The efp structure. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">do_gradient</td><td>Also compute gradient if nonzero value specified.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1049,7 +1025,7 @@ Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 16 2012 18:11:48 for libefp by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 7 2012 21:39:11 for libefp by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>
