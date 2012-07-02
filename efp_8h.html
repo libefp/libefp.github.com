@@ -178,9 +178,9 @@ Enumerations</h2></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a80548297baf5624c04d419da89517be7"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#a80548297baf5624c04d419da89517be7">efp_banner</a> (void)</td></tr>
-<tr class="memdesc:a80548297baf5624c04d419da89517be7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a human readable banner with the information about the library.  <a href="#a80548297baf5624c04d419da89517be7"></a><br/></td></tr>
+<tr class="memdesc:a80548297baf5624c04d419da89517be7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a human readable banner string with information about the library.  <a href="#a80548297baf5624c04d419da89517be7"></a><br/></td></tr>
 <tr class="memitem:ae078d6665079dfdb54d3f531932a648b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#ae078d6665079dfdb54d3f531932a648b">efp_opts_default</a> (struct <a class="el" href="structefp__opts.html">efp_opts</a> *opts)</td></tr>
-<tr class="memdesc:ae078d6665079dfdb54d3f531932a648b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set options to default values.  <a href="#ae078d6665079dfdb54d3f531932a648b"></a><br/></td></tr>
+<tr class="memdesc:ae078d6665079dfdb54d3f531932a648b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get default values of simulation options.  <a href="#ae078d6665079dfdb54d3f531932a648b"></a><br/></td></tr>
 <tr class="memitem:ae6e83fada1d04ff030527e9582239690"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#ae6e83fada1d04ff030527e9582239690">efp_init</a> (struct <a class="el" href="structefp.html">efp</a> **out, const struct <a class="el" href="structefp__opts.html">efp_opts</a> *opts, const struct <a class="el" href="structefp__callbacks.html">efp_callbacks</a> *callbacks, const char **potential_file_list, const char **frag_name_list)</td></tr>
 <tr class="memdesc:ae6e83fada1d04ff030527e9582239690"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the EFP computation.  <a href="#ae6e83fada1d04ff030527e9582239690"></a><br/></td></tr>
 <tr class="memitem:a5f57dce83bdf028d505b10977a9c580e"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#a5f57dce83bdf028d505b10977a9c580e">efp_set_qm_atoms</a> (struct <a class="el" href="structefp.html">efp</a> *<a class="el" href="structefp.html">efp</a>, int n_atoms, const double *znuc, const double *xyz)</td></tr>
@@ -439,7 +439,7 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Get a human readable banner with the information about the library. </p>
+<p>Get a human readable banner string with information about the library. </p>
 <dl class="section return"><dt>Returns:</dt><dd>Banner string, zero-terminated. </dd></dl>
 
 </div>
@@ -459,10 +459,10 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Set options to default values. </p>
+<p>Get default values of simulation options. </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">opts</td><td>Structure to store default option values. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">opts</td><td>Structure to store the defaults. </td></tr>
   </table>
   </dd>
 </dl>
@@ -569,8 +569,8 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">efp</td><td>The efp structure. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">n_atoms</td><td>Number of atoms in <em>ab</em> <em>initio</em> region. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">znuc</td><td>Array of n_atoms elements with atom nuclear charges. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">xyz</td><td>Array of (3 * n_atoms) elements with <em>x</em> <em>y</em> <em>z</em> coordinates of atom positions.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">znuc</td><td>Array of <em>n_atoms</em> elements with atom nuclear charges. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xyz</td><td>Array of [3 * <em>n_atoms</em>] elements with <em>x</em> <em>y</em> <em>z</em> coordinates of atom positions.</td></tr>
   </table>
   </dd>
 </dl>
@@ -641,11 +641,11 @@ Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Update positions and orientations of effective fragments. </p>
-<p>This is a convenience function. It does the same as efp_set_coordinates. However to specify position and orientation of each fragment it takes coordinates of 3 points in space. For each fragment point 1 and first atom of fragment are made to coincide. The vector connecting points 1 and 2 is aligned with the corresponding vector connecting fragment atoms. The plane defined by points 1, 2, and 3 is made to coincide with the corresponding fragment plane.</p>
+<p>This is a convenience function. It does the same as <a class="el" href="efp_8h.html#a557746b2d07da91d1b6d79eede1344ed" title="Update positions and orientations of effective fragments.">efp_set_coordinates</a>. However to specify position and orientation of each fragment it takes coordinates of 3 points in space. For each fragment point 1 and first atom of fragment are made to coincide. The vector connecting points 1 and 2 is aligned with the corresponding vector connecting fragment atoms. The plane defined by points 1, 2, and 3 is made to coincide with the corresponding fragment plane.</p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">efp</td><td>The efp structure. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pts</td><td>Array of points used to determine fragment positions and orientations. The size of this array must be (9 * N), where N is the number of fragments. For each fragment <em>x</em> <em>y</em> <em>z</em> coordinates of 3 fragment points should be specified to setup the position and orientation of a fragment.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pts</td><td>Array of points used to determine fragment positions and orientations. The size of this array must be at least [9 * <em>n</em>] elements, where <em>n</em> is the number of fragments. For each fragment <em>x</em> <em>y</em> <em>z</em> coordinates of 3 fragment points should be specified to setup the position and orientation of a fragment.</td></tr>
   </table>
   </dd>
 </dl>
@@ -688,8 +688,8 @@ Functions</h2></td></tr>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">efp</td><td>The efp structure. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Size of the xyzabc array. Must be at least (6 * N), where N is the number of fragments. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">xyzabc</td><td>Upon return (6 * N) elements will be written to this array. The coordinates of the center of mass and Euler rotation angles for each fragment will be stored.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Size of the xyzabc array. Must be at least [6 * <em>n</em>] elements, where <em>n</em> is the number of fragments. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">xyzabc</td><td>Upon return [6 * <em>n</em>] elements will be written to this array. The coordinates of the center of mass and Euler rotation angles for each fragment will be stored.</td></tr>
   </table>
   </dd>
 </dl>
@@ -845,8 +845,8 @@ Functions</h2></td></tr>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">efp</td><td>The efp structure. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">xyz</td><td>Array where multipole point coordinates will be stored. The size of this array must be at least (3 * n_mult) elements, where n_mult is the value returned by the efp_get_multipole_count function. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">z</td><td>Array where the multipoles will be stored. The size of this array must be at least (20 * n_mult) elements, where n_mult is the value returned by the efp_get_multipole_count function. For each multipole point these 20 elements are charge, 3 dipole components, 6 quadrupole components, 10 octupole components.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">xyz</td><td>Array where multipole point coordinates will be stored. The size of this array must be at least [3 * <em>n_mult</em>] elements, where <em>n_mult</em> is the value returned by the <a class="el" href="efp_8h.html#aeba0695bcb0c090c97e2ca09b7400b04" title="Get total number of EFP multipole points.">efp_get_multipole_count</a> function. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">z</td><td>Array where the multipoles will be stored. The size of this array must be at least [20 * <em>n_mult</em>] elements, where <em>n_mult</em> is the value returned by the <a class="el" href="efp_8h.html#aeba0695bcb0c090c97e2ca09b7400b04" title="Get total number of EFP multipole points.">efp_get_multipole_count</a> function. For each multipole point these 20 elements are charge, 3 dipole components, 6 quadrupole components, 10 octupole components.</td></tr>
   </table>
   </dd>
 </dl>
@@ -926,8 +926,8 @@ Functions</h2></td></tr>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">efp</td><td>The efp structure. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">xyz</td><td>Array where induced dipole coordinates will be stored. The size of this array must be at least (3 * n_dip) elements, where n_dip is the value returned by the efp_get_induced_dipole_count function. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">dip</td><td>Array where the dipoles will be stored. The size of this array must be at least (3 * n_dip) elements, where n_dip is the value returned by the efp_get_induced_dipole_count function. For each point 3 dipole components are stored.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">xyz</td><td>Array where induced dipole coordinates will be stored. The size of this array must be at least [3 * <em>n_dip</em>] elements, where <em>n_dip</em> is the value returned by the <a class="el" href="efp_8h.html#a566befe72a637290e512122db3f595ca" title="Get total number of induced dipoles on EFP fragments.">efp_get_induced_dipole_count</a> function. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">dip</td><td>Array where the dipoles will be stored. The size of this array must be at least [3 * <em>n_dip</em>] elements, where <em>n_dip</em> is the value returned by the <a class="el" href="efp_8h.html#a566befe72a637290e512122db3f595ca" title="Get total number of induced dipoles on EFP fragments.">efp_get_induced_dipole_count</a> function. For each point 3 dipole components are stored.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1007,7 +1007,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">efp</td><td>The efp structure. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">n_grad</td><td>Length of the grad array. Must be at least (6 * N), where N is the number of fragments. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n_grad</td><td>Length of the grad array. Must be at least [6 * <em>n</em>] elements, where <em>n</em> is the number of fragments. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">grad</td><td>For each fragment contains <em>x</em> <em>y</em> <em>z</em> components of negative force and torque.</td></tr>
   </table>
   </dd>
@@ -1095,7 +1095,7 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">efp</td><td>The efp structure. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">frag_idx</td><td>Index of a fragment between zero and total number of fragments minus one. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Size of frag_name buffer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Size of <em>frag_name</em> buffer. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">frag_name</td><td>A buffer where name of the fragment will be stored.</td></tr>
   </table>
   </dd>
@@ -1184,7 +1184,7 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">efp</td><td>The efp structure. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">frag_idx</td><td>Index of a fragment between zero and total number of fragments minus one. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">atoms</td><td>Array of size returned by efp_get_frag_atom_count. Atom information is stored here.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">atoms</td><td>Array of size returned by <a class="el" href="efp_8h.html#a843af1eb33d512ad8874a5946ccbb308" title="Get the number of atoms in the specified fragment.">efp_get_frag_atom_count</a>. Atom information is stored here.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1247,7 +1247,7 @@ Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 2 2012 23:08:22 for libefp by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 2 2012 23:36:06 for libefp by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>
