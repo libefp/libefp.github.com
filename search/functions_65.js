@@ -9,13 +9,16 @@ var searchData=
   ['efp_5fget_5ffrag_5fcount',['efp_get_frag_count',['../efp_8h.html#aa142e142ae5d53e66e2318636e5307c2',1,'efp.h']]],
   ['efp_5fget_5ffrag_5fname',['efp_get_frag_name',['../efp_8h.html#ae8394d5138d79835242ceb62acc3eb7f',1,'efp.h']]],
   ['efp_5fget_5fgradient',['efp_get_gradient',['../efp_8h.html#a6919b52fa0cbbf9b12d5a1db56d63e08',1,'efp.h']]],
+  ['efp_5fget_5finduced_5fdipole_5fcount',['efp_get_induced_dipole_count',['../efp_8h.html#a566befe72a637290e512122db3f595ca',1,'efp.h']]],
+  ['efp_5fget_5finduced_5fdipoles',['efp_get_induced_dipoles',['../efp_8h.html#a88d957659e728625a2d739c6d8413f78',1,'efp.h']]],
+  ['efp_5fget_5fmultipole_5fcount',['efp_get_multipole_count',['../efp_8h.html#aeba0695bcb0c090c97e2ca09b7400b04',1,'efp.h']]],
+  ['efp_5fget_5fmultipoles',['efp_get_multipoles',['../efp_8h.html#a068d10fd3f54ec2ab2e69f984fd1fe75',1,'efp.h']]],
   ['efp_5finit',['efp_init',['../efp_8h.html#ae6e83fada1d04ff030527e9582239690',1,'efp.h']]],
   ['efp_5fopts_5fdefault',['efp_opts_default',['../efp_8h.html#ae078d6665079dfdb54d3f531932a648b',1,'efp.h']]],
-  ['efp_5fqm_5fcontribution',['efp_qm_contribution',['../efp_8h.html#aa7de71bfcf26cf93eabf821ac2e2cc1c',1,'efp.h']]],
   ['efp_5fresult_5fto_5fstring',['efp_result_to_string',['../efp_8h.html#abe229a71cfec7ddba407541e97ba1d24',1,'efp.h']]],
   ['efp_5fscf_5fupdate',['efp_scf_update',['../efp_8h.html#a23deab9ea2c2c5c92d1233ed1296e7ae',1,'efp.h']]],
   ['efp_5fset_5fcoordinates',['efp_set_coordinates',['../efp_8h.html#a557746b2d07da91d1b6d79eede1344ed',1,'efp.h']]],
   ['efp_5fset_5fcoordinates_5f2',['efp_set_coordinates_2',['../efp_8h.html#a43ce775d18baac407e498a9b764b57ce',1,'efp.h']]],
-  ['efp_5fshutdown',['efp_shutdown',['../efp_8h.html#a4a8d1a8b573df53cda73b2916e205cc1',1,'efp.h']]],
-  ['efp_5fupdate_5fqm_5fdata',['efp_update_qm_data',['../efp_8h.html#ac93f00d9aca8cf26dc948a7d60eaccd2',1,'efp.h']]]
+  ['efp_5fset_5fqm_5fatoms',['efp_set_qm_atoms',['../efp_8h.html#a5f57dce83bdf028d505b10977a9c580e',1,'efp.h']]],
+  ['efp_5fshutdown',['efp_shutdown',['../efp_8h.html#a4a8d1a8b573df53cda73b2916e205cc1',1,'efp.h']]]
 ];
