@@ -167,12 +167,20 @@ Enumerations</h2></td></tr>
 <br/>
  }</td></tr>
 <tr class="memdesc:a94612d24119e0ea0db5bb21dd717e3a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags to specify EFP energy terms.  <a href="efp_8h.html#a94612d24119e0ea0db5bb21dd717e3a4">More...</a><br/></td></tr>
-<tr class="memitem:aab2895f345747f006c21b846a04e0676"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#aab2895f345747f006c21b846a04e0676">efp_disp_damp</a> { <a class="el" href="efp_8h.html#aab2895f345747f006c21b846a04e0676aec5ed14d33acafa267432ff2459fe873">EFP_DISP_DAMP_OVERLAP</a> =  0, 
-<a class="el" href="efp_8h.html#aab2895f345747f006c21b846a04e0676a0dc525ead582f2ded8c7c01cff8a1a5a">EFP_DISP_DAMP_TT</a>
+<tr class="memitem:aab2895f345747f006c21b846a04e0676"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#aab2895f345747f006c21b846a04e0676">efp_disp_damp</a> { <br/>
+&#160;&#160;<a class="el" href="efp_8h.html#aab2895f345747f006c21b846a04e0676aec5ed14d33acafa267432ff2459fe873">EFP_DISP_DAMP_OVERLAP</a> =  0, 
+<a class="el" href="efp_8h.html#aab2895f345747f006c21b846a04e0676a0dc525ead582f2ded8c7c01cff8a1a5a">EFP_DISP_DAMP_TT</a>, 
+<br/>
+&#160;&#160;<a class="el" href="efp_8h.html#aab2895f345747f006c21b846a04e0676a530fa531a8e138f211e623857f8359c6">EFP_DISP_DAMP_OFF</a>
+<br/>
  }</td></tr>
 <tr class="memdesc:aab2895f345747f006c21b846a04e0676"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fragment-fragment dispersion damping type.  <a href="efp_8h.html#aab2895f345747f006c21b846a04e0676">More...</a><br/></td></tr>
-<tr class="memitem:a3ca6956007970c8cf059f3b169e0234e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#a3ca6956007970c8cf059f3b169e0234e">efp_elec_damp</a> { <a class="el" href="efp_8h.html#a3ca6956007970c8cf059f3b169e0234ea3d950c454912a5e7d13f7834687d3560">EFP_ELEC_DAMP_SCREEN</a> =  0, 
-<a class="el" href="efp_8h.html#a3ca6956007970c8cf059f3b169e0234ea5a90973d33c79d8b702af6f506e8bad8">EFP_ELEC_DAMP_OVERLAP</a>
+<tr class="memitem:a3ca6956007970c8cf059f3b169e0234e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#a3ca6956007970c8cf059f3b169e0234e">efp_elec_damp</a> { <br/>
+&#160;&#160;<a class="el" href="efp_8h.html#a3ca6956007970c8cf059f3b169e0234ea3d950c454912a5e7d13f7834687d3560">EFP_ELEC_DAMP_SCREEN</a> =  0, 
+<a class="el" href="efp_8h.html#a3ca6956007970c8cf059f3b169e0234ea5a90973d33c79d8b702af6f506e8bad8">EFP_ELEC_DAMP_OVERLAP</a>, 
+<br/>
+&#160;&#160;<a class="el" href="efp_8h.html#a3ca6956007970c8cf059f3b169e0234ea1f367b107d6d996b15ad0d0601e809e7">EFP_ELEC_DAMP_OFF</a>
+<br/>
  }</td></tr>
 <tr class="memdesc:a3ca6956007970c8cf059f3b169e0234e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fragment-fragment electrostatic damping type.  <a href="efp_8h.html#a3ca6956007970c8cf059f3b169e0234e">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
@@ -196,17 +204,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a89b33171a885629ee53d9e8ca6af4497"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#a89b33171a885629ee53d9e8ca6af4497">efp_compute</a> (struct <a class="el" href="structefp.html">efp</a> *<a class="el" href="structefp.html">efp</a>, int do_gradient)</td></tr>
 <tr class="memdesc:a89b33171a885629ee53d9e8ca6af4497"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform the EFP computation.  <a href="#a89b33171a885629ee53d9e8ca6af4497"></a><br/></td></tr>
 <tr class="memitem:aeba0695bcb0c090c97e2ca09b7400b04"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#aeba0695bcb0c090c97e2ca09b7400b04">efp_get_multipole_count</a> (struct <a class="el" href="structefp.html">efp</a> *<a class="el" href="structefp.html">efp</a>, int *n_mult)</td></tr>
-<tr class="memdesc:aeba0695bcb0c090c97e2ca09b7400b04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get total number of EFP multipole points.  <a href="#aeba0695bcb0c090c97e2ca09b7400b04"></a><br/></td></tr>
-<tr class="memitem:a068d10fd3f54ec2ab2e69f984fd1fe75"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#a068d10fd3f54ec2ab2e69f984fd1fe75">efp_get_multipoles</a> (struct <a class="el" href="structefp.html">efp</a> *<a class="el" href="structefp.html">efp</a>, double *xyz, double *z)</td></tr>
-<tr class="memdesc:a068d10fd3f54ec2ab2e69f984fd1fe75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get multipoles from all fragments.  <a href="#a068d10fd3f54ec2ab2e69f984fd1fe75"></a><br/></td></tr>
-<tr class="memitem:a566befe72a637290e512122db3f595ca"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#a566befe72a637290e512122db3f595ca">efp_get_induced_dipole_count</a> (struct <a class="el" href="structefp.html">efp</a> *<a class="el" href="structefp.html">efp</a>, int *n_dip)</td></tr>
-<tr class="memdesc:a566befe72a637290e512122db3f595ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get total number of induced dipoles on EFP fragments.  <a href="#a566befe72a637290e512122db3f595ca"></a><br/></td></tr>
-<tr class="memitem:a88d957659e728625a2d739c6d8413f78"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#a88d957659e728625a2d739c6d8413f78">efp_get_induced_dipoles</a> (struct <a class="el" href="structefp.html">efp</a> *<a class="el" href="structefp.html">efp</a>, double *xyz, double *dip)</td></tr>
-<tr class="memdesc:a88d957659e728625a2d739c6d8413f78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get induced dipoles from all EFP fragments.  <a href="#a88d957659e728625a2d739c6d8413f78"></a><br/></td></tr>
+<tr class="memdesc:aeba0695bcb0c090c97e2ca09b7400b04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get total number of EFP multipoles.  <a href="#aeba0695bcb0c090c97e2ca09b7400b04"></a><br/></td></tr>
+<tr class="memitem:a8dac2e206058c179a0d7fb08828eecce"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#a8dac2e206058c179a0d7fb08828eecce">efp_get_multipoles</a> (struct <a class="el" href="structefp.html">efp</a> *<a class="el" href="structefp.html">efp</a>, double **xyz, double **z)</td></tr>
+<tr class="memdesc:a8dac2e206058c179a0d7fb08828eecce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all electrostatic multipoles from all fragments.  <a href="#a8dac2e206058c179a0d7fb08828eecce"></a><br/></td></tr>
 <tr class="memitem:a90b542f2392be9e0d47e0a0f41779c1e"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#a90b542f2392be9e0d47e0a0f41779c1e">efp_get_energy</a> (struct <a class="el" href="structefp.html">efp</a> *<a class="el" href="structefp.html">efp</a>, struct <a class="el" href="structefp__energy.html">efp_energy</a> *energy)</td></tr>
-<tr class="memdesc:a90b542f2392be9e0d47e0a0f41779c1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get computed energies of corresponding EFP terms.  <a href="#a90b542f2392be9e0d47e0a0f41779c1e"></a><br/></td></tr>
-<tr class="memitem:a6919b52fa0cbbf9b12d5a1db56d63e08"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#a6919b52fa0cbbf9b12d5a1db56d63e08">efp_get_gradient</a> (struct <a class="el" href="structefp.html">efp</a> *<a class="el" href="structefp.html">efp</a>, int n_grad, double *grad)</td></tr>
-<tr class="memdesc:a6919b52fa0cbbf9b12d5a1db56d63e08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get computed EFP energy gradient.  <a href="#a6919b52fa0cbbf9b12d5a1db56d63e08"></a><br/></td></tr>
+<tr class="memdesc:a90b542f2392be9e0d47e0a0f41779c1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get computed energy components.  <a href="#a90b542f2392be9e0d47e0a0f41779c1e"></a><br/></td></tr>
+<tr class="memitem:ad812bbe70168f3e6476f552d351c97f9"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#ad812bbe70168f3e6476f552d351c97f9">efp_get_gradient</a> (struct <a class="el" href="structefp.html">efp</a> *<a class="el" href="structefp.html">efp</a>, int size, double *grad)</td></tr>
+<tr class="memdesc:ad812bbe70168f3e6476f552d351c97f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get computed EFP energy gradient.  <a href="#ad812bbe70168f3e6476f552d351c97f9"></a><br/></td></tr>
+<tr class="memitem:a1cb488c708b29b40751ab3c1d88ca2b3"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#a1cb488c708b29b40751ab3c1d88ca2b3">efp_get_qm_gradient</a> (struct <a class="el" href="structefp.html">efp</a> *<a class="el" href="structefp.html">efp</a>, int size, double *grad)</td></tr>
+<tr class="memdesc:a1cb488c708b29b40751ab3c1d88ca2b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the gradient on atoms in <em>ab</em> <em>initio</em> subsystem due to EFP interaction.  <a href="#a1cb488c708b29b40751ab3c1d88ca2b3"></a><br/></td></tr>
 <tr class="memitem:aa142e142ae5d53e66e2318636e5307c2"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#aa142e142ae5d53e66e2318636e5307c2">efp_get_frag_count</a> (struct <a class="el" href="structefp.html">efp</a> *<a class="el" href="structefp.html">efp</a>, int *n_frag)</td></tr>
 <tr class="memdesc:aa142e142ae5d53e66e2318636e5307c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of fragments in this computation.  <a href="#aa142e142ae5d53e66e2318636e5307c2"></a><br/></td></tr>
 <tr class="memitem:ae8394d5138d79835242ceb62acc3eb7f"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#ae8394d5138d79835242ceb62acc3eb7f">efp_get_frag_name</a> (struct <a class="el" href="structefp.html">efp</a> *<a class="el" href="structefp.html">efp</a>, int frag_idx, int size, char *frag_name)</td></tr>
@@ -392,6 +398,9 @@ Functions</h2></td></tr>
 <tr><td valign="top"><em><a class="anchor" id="aab2895f345747f006c21b846a04e0676a0dc525ead582f2ded8c7c01cff8a1a5a"></a>EFP_DISP_DAMP_TT</em>&nbsp;</td><td>
 <p>Tang-Toennies damping. </p>
 </td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aab2895f345747f006c21b846a04e0676a530fa531a8e138f211e623857f8359c6"></a>EFP_DISP_DAMP_OFF</em>&nbsp;</td><td>
+<p>No dispersion damping. </p>
+</td></tr>
 </table>
 </dd>
 </dl>
@@ -416,6 +425,9 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a3ca6956007970c8cf059f3b169e0234ea5a90973d33c79d8b702af6f506e8bad8"></a>EFP_ELEC_DAMP_OVERLAP</em>&nbsp;</td><td>
 <p>Overlap-based damping. </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a3ca6956007970c8cf059f3b169e0234ea1f367b107d6d996b15ad0d0601e809e7"></a>EFP_ELEC_DAMP_OFF</em>&nbsp;</td><td>
+<p>No electrostatic damping. </p>
 </td></tr>
 </table>
 </dd>
@@ -723,7 +735,7 @@ Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Update wave function dependent energy terms. </p>
-<p>Must be called during <em>ab</em> <em>initio</em> SCF.</p>
+<p>This function must be called during <em>ab</em> <em>initio</em> SCF.</p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">efp</td><td>The efp structure. </td></tr>
@@ -798,11 +810,11 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Get total number of EFP multipole points. </p>
+<p>Get total number of EFP multipoles. </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">efp</td><td>The efp structure. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">n_mult</td><td>Total number of EFP multipole points.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">n_mult</td><td>Array of 4 integers where the total number of charges, dipoles, quadrupoles and octupoles will be stored.</td></tr>
   </table>
   </dd>
 </dl>
@@ -810,12 +822,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a068d10fd3f54ec2ab2e69f984fd1fe75"></a>
+<a class="anchor" id="a8dac2e206058c179a0d7fb08828eecce"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a> <a class="el" href="efp_8h.html#a068d10fd3f54ec2ab2e69f984fd1fe75">efp_get_multipoles</a> </td>
+          <td class="memname">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a> <a class="el" href="efp_8h.html#a8dac2e206058c179a0d7fb08828eecce">efp_get_multipoles</a> </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structefp.html">efp</a> *&#160;</td>
           <td class="paramname"><em>efp</em>, </td>
@@ -823,13 +835,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double *&#160;</td>
+          <td class="paramtype">double **&#160;</td>
           <td class="paramname"><em>xyz</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double *&#160;</td>
+          <td class="paramtype">double **&#160;</td>
           <td class="paramname"><em>z</em>&#160;</td>
         </tr>
         <tr>
@@ -841,96 +853,21 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Get multipoles from all fragments. </p>
+<p>Get all electrostatic multipoles from all fragments. </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">efp</td><td>The efp structure. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">xyz</td><td>Array where multipole point coordinates will be stored. The size of this array must be at least [3 * <em>n_mult</em>] elements, where <em>n_mult</em> is the value returned by the <a class="el" href="efp_8h.html#aeba0695bcb0c090c97e2ca09b7400b04" title="Get total number of EFP multipole points.">efp_get_multipole_count</a> function. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">z</td><td>Array where the multipoles will be stored. The size of this array must be at least [20 * <em>n_mult</em>] elements, where <em>n_mult</em> is the value returned by the <a class="el" href="efp_8h.html#aeba0695bcb0c090c97e2ca09b7400b04" title="Get total number of EFP multipole points.">efp_get_multipole_count</a> function. For each multipole point these 20 elements are charge, 3 dipole components, 6 quadrupole components, 10 octupole components.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">efp</td><td>The efp structure.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">xyz</td><td>Array of four pointers to arrays where the corresponding multipole point coordinates will be stored. The size of each array must be at least [3 * <em>n_mult</em>] elements, where <em>n_mult</em> is the corresponding value in the array returned by the <a class="el" href="efp_8h.html#aeba0695bcb0c090c97e2ca09b7400b04" title="Get total number of EFP multipoles.">efp_get_multipole_count</a> function.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">z</td><td>Array of four pointers to arrays where the charges, dipoles, quadrupoles, and octupoles will be stored.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns:</dt><dd><a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba2e840136673d27ffd986fcde8ad2e670" title="Operation was successful.">EFP_RESULT_SUCCESS</a> on success or error code otherwise. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a566befe72a637290e512122db3f595ca"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a> <a class="el" href="efp_8h.html#a566befe72a637290e512122db3f595ca">efp_get_induced_dipole_count</a> </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structefp.html">efp</a> *&#160;</td>
-          <td class="paramname"><em>efp</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>n_dip</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Get total number of induced dipoles on EFP fragments. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">efp</td><td>The efp structure. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">n_dip</td><td>Total number of induced dipoles on EFP fragments.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns:</dt><dd><a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba2e840136673d27ffd986fcde8ad2e670" title="Operation was successful.">EFP_RESULT_SUCCESS</a> on success or error code otherwise. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a88d957659e728625a2d739c6d8413f78"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a> <a class="el" href="efp_8h.html#a88d957659e728625a2d739c6d8413f78">efp_get_induced_dipoles</a> </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structefp.html">efp</a> *&#160;</td>
-          <td class="paramname"><em>efp</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double *&#160;</td>
-          <td class="paramname"><em>xyz</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double *&#160;</td>
-          <td class="paramname"><em>dip</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Get induced dipoles from all EFP fragments. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">efp</td><td>The efp structure. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">xyz</td><td>Array where induced dipole coordinates will be stored. The size of this array must be at least [3 * <em>n_dip</em>] elements, where <em>n_dip</em> is the value returned by the <a class="el" href="efp_8h.html#a566befe72a637290e512122db3f595ca" title="Get total number of induced dipoles on EFP fragments.">efp_get_induced_dipole_count</a> function. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">dip</td><td>Array where the dipoles will be stored. The size of this array must be at least [3 * <em>n_dip</em>] elements, where <em>n_dip</em> is the value returned by the <a class="el" href="efp_8h.html#a566befe72a637290e512122db3f595ca" title="Get total number of induced dipoles on EFP fragments.">efp_get_induced_dipole_count</a> function. For each point 3 dipole components are stored.</td></tr>
-  </table>
-  </dd>
-</dl>
+<p>The size of the first array (charges) must be at least [<em>n_mult</em>] elements, where <em>n_mult</em> is the corresponding first element of the array returned by the <a class="el" href="efp_8h.html#aeba0695bcb0c090c97e2ca09b7400b04" title="Get total number of EFP multipoles.">efp_get_multipole_count</a> function.</p>
+<p>The size of the second array (dipoles) must be at least [3 * <em>n_mult</em>] elements, where <em>n_mult</em> is the corresponding second element of the array returned by the <a class="el" href="efp_8h.html#aeba0695bcb0c090c97e2ca09b7400b04" title="Get total number of EFP multipoles.">efp_get_multipole_count</a> function.</p>
+<p>The size of the third array (quadrupoles) must be at least [6 * <em>n_mult</em>] elements, where <em>n_mult</em> is the corresponding third element of the array returned by the <a class="el" href="efp_8h.html#aeba0695bcb0c090c97e2ca09b7400b04" title="Get total number of EFP multipoles.">efp_get_multipole_count</a> function.</p>
+<p>Quadrupoles are stored in the following order: xx, yy, zz, xy, xz, yz</p>
+<p>The size of the fourth array (octupoles) must be at least [10 * <em>n_mult</em>] elements, where <em>n_mult</em> is the corresponding fourth element of the array returned by the <a class="el" href="efp_8h.html#aeba0695bcb0c090c97e2ca09b7400b04" title="Get total number of EFP multipoles.">efp_get_multipole_count</a> function.</p>
+<p>Octupoles are stored in the following order: xxx, yyy, zzz, xxy, xxz, xyy, yyz, xzz, yzz, xyz</p>
 <dl class="section return"><dt>Returns:</dt><dd><a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba2e840136673d27ffd986fcde8ad2e670" title="Operation was successful.">EFP_RESULT_SUCCESS</a> on success or error code otherwise. </dd></dl>
 
 </div>
@@ -960,7 +897,7 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Get computed energies of corresponding EFP terms. </p>
+<p>Get computed energy components. </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">efp</td><td>The efp structure. </td></tr>
@@ -972,12 +909,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a6919b52fa0cbbf9b12d5a1db56d63e08"></a>
+<a class="anchor" id="ad812bbe70168f3e6476f552d351c97f9"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a> <a class="el" href="efp_8h.html#a6919b52fa0cbbf9b12d5a1db56d63e08">efp_get_gradient</a> </td>
+          <td class="memname">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a> <a class="el" href="efp_8h.html#ad812bbe70168f3e6476f552d351c97f9">efp_get_gradient</a> </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structefp.html">efp</a> *&#160;</td>
           <td class="paramname"><em>efp</em>, </td>
@@ -986,7 +923,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>n_grad</em>, </td>
+          <td class="paramname"><em>size</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1007,8 +944,53 @@ Functions</h2></td></tr>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">efp</td><td>The efp structure. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">n_grad</td><td>Length of the grad array. Must be at least [6 * <em>n</em>] elements, where <em>n</em> is the number of fragments. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Size of the grad array. Must be at least [6 * <em>n</em>] elements, where <em>n</em> is the number of fragments. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">grad</td><td>For each fragment contains <em>x</em> <em>y</em> <em>z</em> components of negative force and torque.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd><a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba2e840136673d27ffd986fcde8ad2e670" title="Operation was successful.">EFP_RESULT_SUCCESS</a> on success or error code otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1cb488c708b29b40751ab3c1d88ca2b3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a> <a class="el" href="efp_8h.html#a1cb488c708b29b40751ab3c1d88ca2b3">efp_get_qm_gradient</a> </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structefp.html">efp</a> *&#160;</td>
+          <td class="paramname"><em>efp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>grad</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get the gradient on atoms in <em>ab</em> <em>initio</em> subsystem due to EFP interaction. </p>
+<p>This does not include additional correction due to changes in the <em>ab</em> <em>initio</em> wave function affected by EFP subsystem.</p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">efp</td><td>The efp structure. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Size of the grad array. Must be at least [3 * <em>n</em>] elements, where <em>n</em> is the number of atoms in the <em>ab</em> <em>initio</em> subsystem. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">grad</td><td>For each atom <em>x</em> <em>y</em> <em>z</em> components of energy gradient are stored.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1247,7 +1229,7 @@ Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 2 2012 23:36:06 for libefp by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 10 2012 17:48:51 for libefp by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

@@ -1,7 +1,9 @@
 var searchData=
 [
+  ['efp_5fdisp_5fdamp_5foff',['EFP_DISP_DAMP_OFF',['../efp_8h.html#aab2895f345747f006c21b846a04e0676a530fa531a8e138f211e623857f8359c6',1,'efp.h']]],
   ['efp_5fdisp_5fdamp_5foverlap',['EFP_DISP_DAMP_OVERLAP',['../efp_8h.html#aab2895f345747f006c21b846a04e0676aec5ed14d33acafa267432ff2459fe873',1,'efp.h']]],
   ['efp_5fdisp_5fdamp_5ftt',['EFP_DISP_DAMP_TT',['../efp_8h.html#aab2895f345747f006c21b846a04e0676a0dc525ead582f2ded8c7c01cff8a1a5a',1,'efp.h']]],
+  ['efp_5felec_5fdamp_5foff',['EFP_ELEC_DAMP_OFF',['../efp_8h.html#a3ca6956007970c8cf059f3b169e0234ea1f367b107d6d996b15ad0d0601e809e7',1,'efp.h']]],
   ['efp_5felec_5fdamp_5foverlap',['EFP_ELEC_DAMP_OVERLAP',['../efp_8h.html#a3ca6956007970c8cf059f3b169e0234ea5a90973d33c79d8b702af6f506e8bad8',1,'efp.h']]],
   ['efp_5felec_5fdamp_5fscreen',['EFP_ELEC_DAMP_SCREEN',['../efp_8h.html#a3ca6956007970c8cf059f3b169e0234ea3d950c454912a5e7d13f7834687d3560',1,'efp.h']]],
   ['efp_5fresult_5fargument_5fnull',['EFP_RESULT_ARGUMENT_NULL',['../efp_8h.html#a7bbdafa442aaefa9561740540b1c75ebaba5ca941f3a142d1bfc30877c2dd2901',1,'efp.h']]],
