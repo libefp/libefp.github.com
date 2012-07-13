@@ -219,8 +219,8 @@ Functions</h2></td></tr>
 <tr class="memdesc:ae8394d5138d79835242ceb62acc3eb7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the specified effective fragment.  <a href="#ae8394d5138d79835242ceb62acc3eb7f"></a><br/></td></tr>
 <tr class="memitem:a843af1eb33d512ad8874a5946ccbb308"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#a843af1eb33d512ad8874a5946ccbb308">efp_get_frag_atom_count</a> (struct <a class="el" href="structefp.html">efp</a> *<a class="el" href="structefp.html">efp</a>, int frag_idx, int *n_atoms)</td></tr>
 <tr class="memdesc:a843af1eb33d512ad8874a5946ccbb308"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of atoms in the specified fragment.  <a href="#a843af1eb33d512ad8874a5946ccbb308"></a><br/></td></tr>
-<tr class="memitem:ade783bad22dcfb37d46ffed389d20fcc"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#ade783bad22dcfb37d46ffed389d20fcc">efp_get_frag_atoms</a> (struct <a class="el" href="structefp.html">efp</a> *<a class="el" href="structefp.html">efp</a>, int frag_idx, struct <a class="el" href="structefp__atom.html">efp_atom</a> *atoms)</td></tr>
-<tr class="memdesc:ade783bad22dcfb37d46ffed389d20fcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get atoms comprising the specified fragment.  <a href="#ade783bad22dcfb37d46ffed389d20fcc"></a><br/></td></tr>
+<tr class="memitem:aa16cb80ff859091c0e7b328bd482b8f8"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#aa16cb80ff859091c0e7b328bd482b8f8">efp_get_frag_atoms</a> (struct <a class="el" href="structefp.html">efp</a> *<a class="el" href="structefp.html">efp</a>, int frag_idx, int size, struct <a class="el" href="structefp__atom.html">efp_atom</a> *atoms)</td></tr>
+<tr class="memdesc:aa16cb80ff859091c0e7b328bd482b8f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get atoms comprising the specified fragment.  <a href="#aa16cb80ff859091c0e7b328bd482b8f8"></a><br/></td></tr>
 <tr class="memitem:a4a8d1a8b573df53cda73b2916e205cc1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#a4a8d1a8b573df53cda73b2916e205cc1">efp_shutdown</a> (struct <a class="el" href="structefp.html">efp</a> *<a class="el" href="structefp.html">efp</a>)</td></tr>
 <tr class="memdesc:a4a8d1a8b573df53cda73b2916e205cc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release all resources used by this <em>efp</em>.  <a href="#a4a8d1a8b573df53cda73b2916e205cc1"></a><br/></td></tr>
 <tr class="memitem:abe229a71cfec7ddba407541e97ba1d24"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#abe229a71cfec7ddba407541e97ba1d24">efp_result_to_string</a> (enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a> res)</td></tr>
@@ -619,7 +619,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">efp</td><td>The efp structure. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">xyzabc</td><td>for each fragment specifies <em>x</em> <em>y</em> <em>z</em> components of fragment center of mass position and three Euler rotation angles representing orientation of a fragment.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xyzabc</td><td>For each fragment specifies <em>x</em> <em>y</em> <em>z</em> components of the center of mass position and three Euler rotation angles representing orientation of a fragment.</td></tr>
   </table>
   </dd>
 </dl>
@@ -865,9 +865,9 @@ Functions</h2></td></tr>
 <p>The size of the first array (charges) must be at least [<em>n_mult</em>] elements, where <em>n_mult</em> is the corresponding first element of the array returned by the <a class="el" href="efp_8h.html#aeba0695bcb0c090c97e2ca09b7400b04" title="Get total number of EFP multipoles.">efp_get_multipole_count</a> function.</p>
 <p>The size of the second array (dipoles) must be at least [3 * <em>n_mult</em>] elements, where <em>n_mult</em> is the corresponding second element of the array returned by the <a class="el" href="efp_8h.html#aeba0695bcb0c090c97e2ca09b7400b04" title="Get total number of EFP multipoles.">efp_get_multipole_count</a> function.</p>
 <p>The size of the third array (quadrupoles) must be at least [6 * <em>n_mult</em>] elements, where <em>n_mult</em> is the corresponding third element of the array returned by the <a class="el" href="efp_8h.html#aeba0695bcb0c090c97e2ca09b7400b04" title="Get total number of EFP multipoles.">efp_get_multipole_count</a> function.</p>
-<p>Quadrupoles are stored in the following order: xx, yy, zz, xy, xz, yz</p>
+<p>Quadrupoles are stored in the following order: <em>xx</em>, <em>yy</em>, <em>zz</em>, <em>xy</em>, <em>xz</em>, <em>yz</em> </p>
 <p>The size of the fourth array (octupoles) must be at least [10 * <em>n_mult</em>] elements, where <em>n_mult</em> is the corresponding fourth element of the array returned by the <a class="el" href="efp_8h.html#aeba0695bcb0c090c97e2ca09b7400b04" title="Get total number of EFP multipoles.">efp_get_multipole_count</a> function.</p>
-<p>Octupoles are stored in the following order: xxx, yyy, zzz, xxy, xxz, xyy, yyz, xzz, yzz, xyz</p>
+<p>Octupoles are stored in the following order: <em>xxx</em>, <em>yyy</em>, <em>zzz</em>, <em>xxy</em>, <em>xxz</em>, <em>xyy</em>, <em>yyz</em>, <em>xzz</em>, <em>yzz</em>, <em>xyz</em> </p>
 <dl class="section return"><dt>Returns:</dt><dd><a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba2e840136673d27ffd986fcde8ad2e670" title="Operation was successful.">EFP_RESULT_SUCCESS</a> on success or error code otherwise. </dd></dl>
 
 </div>
@@ -1076,8 +1076,8 @@ Functions</h2></td></tr>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">efp</td><td>The efp structure. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">frag_idx</td><td>Index of a fragment between zero and total number of fragments minus one. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Size of <em>frag_name</em> buffer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">frag_idx</td><td>Index of a fragment. Must be a value between zero and the total number of fragments minus one. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Size of a <em>frag_name</em> buffer. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">frag_name</td><td>A buffer where name of the fragment will be stored.</td></tr>
   </table>
   </dd>
@@ -1121,7 +1121,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">efp</td><td>The efp structure. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">frag_idx</td><td>Index of a fragment between zero and total number of fragments minus one. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">frag_idx</td><td>Index of a fragment. Must be a value between zero and the total number of fragments minus one. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">n_atoms</td><td>Total number of atoms in the fragment.</td></tr>
   </table>
   </dd>
@@ -1130,12 +1130,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ade783bad22dcfb37d46ffed389d20fcc"></a>
+<a class="anchor" id="aa16cb80ff859091c0e7b328bd482b8f8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a> <a class="el" href="efp_8h.html#ade783bad22dcfb37d46ffed389d20fcc">efp_get_frag_atoms</a> </td>
+          <td class="memname">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a> <a class="el" href="efp_8h.html#aa16cb80ff859091c0e7b328bd482b8f8">efp_get_frag_atoms</a> </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structefp.html">efp</a> *&#160;</td>
           <td class="paramname"><em>efp</em>, </td>
@@ -1145,6 +1145,12 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>frag_idx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1165,8 +1171,9 @@ Functions</h2></td></tr>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">efp</td><td>The efp structure. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">frag_idx</td><td>Index of a fragment between zero and total number of fragments minus one. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">atoms</td><td>Array of size returned by <a class="el" href="efp_8h.html#a843af1eb33d512ad8874a5946ccbb308" title="Get the number of atoms in the specified fragment.">efp_get_frag_atom_count</a>. Atom information is stored here.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">frag_idx</td><td>Index of a fragment. Must be a value between zero and the total number of fragments minus one. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Size of the <em>atoms</em> array. Must be greater than or equal to the size returned by the <a class="el" href="efp_8h.html#a843af1eb33d512ad8874a5946ccbb308" title="Get the number of atoms in the specified fragment.">efp_get_frag_atom_count</a> function. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">atoms</td><td>Array where atom information will be stored.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1229,7 +1236,7 @@ Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 10 2012 17:48:51 for libefp by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 13 2012 11:04:28 for libefp by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>
