@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>libefp: libefp - The Effective Fragment Potential method implementation</title>
+<title>libefp: LIBEFP - The Effective Fragment Potential method implementation</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -85,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div class="header">
   <div class="headertitle">
-<div class="title">libefp - The Effective Fragment Potential method implementation </div>  </div>
+<div class="title">LIBEFP - The Effective Fragment Potential method implementation </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h2><a class="anchor" id="API"></a>
@@ -94,12 +94,21 @@ Public API Documentation</h2>
 <h2><a class="anchor" id="Repo"></a>
 Git Repository</h2>
 <p>Latest development version of code can be found in git <a href="http://github.com/libefp/libefp">repository</a>.</p>
+<h2><a class="anchor" id="EFPMD"></a>
+EFPMD package</h2>
+<p><a href="http://github.com/libefp/libefp/tree/master/efpmd">EFPMD</a> is a molecular simulation package based on <a href="http://libefp.github.com/">LIBEFP</a>. It allows to perform EFP-only molecular simulation such as geometry optimization and molecular dynamics. See <a href="http://github.com/libefp/libefp/tree/master/efpmd/README.md">README</a> file for more information on how to use the package.</p>
+<h2><a class="anchor" id="Parallel"></a>
+Parallel Performance</h2>
+<p>The EFP code is parallelized using <a href="http://www.openmp.org/">OpenMP</a> to utilize the full power of multi-core CPUs. Below is the plot of achieved parallel speedup in a single point energy computation test with a system containing 3375 EFP water molecules. The test was performed using <a href="http://github.com/libefp/libefp/tree/master/efpmd">EFPMD</a> program on a machine with two Intel Xeon X5667 CPUs.</p>
+<div class="image">
+<img src="speedup-8-core.png" alt="speedup-8-core.png"/>
+</div>
 <dl class="section copyright"><dt>Copyright:</dt><dd>Copyright (c) 2012 Ilya Kaliman. Distributed under the terms of BSD 2-clause license. See <a href="http://github.com/libefp/libefp/blob/master/LICENSE">LICENSE</a> file for details. </dd></dl>
 </div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 21 2012 14:31:48 for libefp by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jul 21 2012 16:22:24 for libefp by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>
