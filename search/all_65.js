@@ -42,7 +42,6 @@ var searchData=
   ['efp_5fresult_5fno_5fmemory',['EFP_RESULT_NO_MEMORY',['../efp_8h.html#a7bbdafa442aaefa9561740540b1c75ebacb907792b5b65778771b2357b5bc2f44',1,'efp.h']]],
   ['efp_5fresult_5fnot_5fimplemented',['EFP_RESULT_NOT_IMPLEMENTED',['../efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba482c991522b17d6d025bf2d1c5a5cb94',1,'efp.h']]],
   ['efp_5fresult_5fnot_5finitialized',['EFP_RESULT_NOT_INITIALIZED',['../efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba42f4f7a186217b2687643ef658e61f60',1,'efp.h']]],
-  ['efp_5fresult_5foverlap_5fintegrals_5frequired',['EFP_RESULT_OVERLAP_INTEGRALS_REQUIRED',['../efp_8h.html#a7bbdafa442aaefa9561740540b1c75ebabf06777411a626046dc2ce41840ac749',1,'efp.h']]],
   ['efp_5fresult_5fparameters_5fmissing',['EFP_RESULT_PARAMETERS_MISSING',['../efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba6d6f5686740dd81de8aa056b40f6e84e',1,'efp.h']]],
   ['efp_5fresult_5fsuccess',['EFP_RESULT_SUCCESS',['../efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba2e840136673d27ffd986fcde8ad2e670',1,'efp.h']]],
   ['efp_5fresult_5fsyntax_5ferror',['EFP_RESULT_SYNTAX_ERROR',['../efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba0cfb03bb61085621733bbf96dde458fc',1,'efp.h']]],

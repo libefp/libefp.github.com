@@ -136,16 +136,15 @@ Enumerations</h2></td></tr>
 <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75ebaff9c8705d1956be569b907e57d09c69e">EFP_RESULT_CALLBACK_NOT_SET</a>, 
 <br/>
 &#160;&#160;<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba51e81b0776a8fdcd2061348b1a852d49">EFP_RESULT_CALLBACK_FAILED</a>, 
-<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75ebabf06777411a626046dc2ce41840ac749">EFP_RESULT_OVERLAP_INTEGRALS_REQUIRED</a>, 
+<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75ebaf0a6567aa3ffd1e7bf94f6bbdbb63605">EFP_RESULT_GRADIENT_NOT_REQUESTED</a>, 
 <br/>
-&#160;&#160;<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75ebaf0a6567aa3ffd1e7bf94f6bbdbb63605">EFP_RESULT_GRADIENT_NOT_REQUESTED</a>, 
-<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba6d6f5686740dd81de8aa056b40f6e84e">EFP_RESULT_PARAMETERS_MISSING</a>, 
+&#160;&#160;<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba6d6f5686740dd81de8aa056b40f6e84e">EFP_RESULT_PARAMETERS_MISSING</a>, 
+<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba72b5d4ee5a6758646f79b33d00c3b7b3">EFP_RESULT_INDEX_OUT_OF_RANGE</a>, 
 <br/>
-&#160;&#160;<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba72b5d4ee5a6758646f79b33d00c3b7b3">EFP_RESULT_INDEX_OUT_OF_RANGE</a>, 
-<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba7741ba2c2bc1d8abc29a4a24d1c99d9d">EFP_RESULT_INVALID_ARRAY_SIZE</a>, 
+&#160;&#160;<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba7741ba2c2bc1d8abc29a4a24d1c99d9d">EFP_RESULT_INVALID_ARRAY_SIZE</a>, 
+<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba0031d43e67393283bcd21ee16c50aec4">EFP_RESULT_UNSUPPORTED_SCREEN</a>, 
 <br/>
-&#160;&#160;<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba0031d43e67393283bcd21ee16c50aec4">EFP_RESULT_UNSUPPORTED_SCREEN</a>, 
-<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba740b2c0a94f90cb2137f3e2acca4bda6">EFP_RESULT_INCONSISTENT_TERMS</a>
+&#160;&#160;<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba740b2c0a94f90cb2137f3e2acca4bda6">EFP_RESULT_INCONSISTENT_TERMS</a>
 <br/>
  }</td></tr>
 <tr class="memdesc:a7bbdafa442aaefa9561740540b1c75eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result of an operation.  <a href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">More...</a><br/></td></tr>
@@ -301,10 +300,6 @@ Functions</h2></td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a7bbdafa442aaefa9561740540b1c75eba51e81b0776a8fdcd2061348b1a852d49"></a>EFP_RESULT_CALLBACK_FAILED</em>&nbsp;</td><td>
 <p>Call to callback function failed. </p>
 </td></tr>
-<tr><td valign="top"><em><a class="anchor" id="a7bbdafa442aaefa9561740540b1c75ebabf06777411a626046dc2ce41840ac749"></a>EFP_RESULT_OVERLAP_INTEGRALS_REQUIRED</em>&nbsp;</td><td>
-<p>Exchange-repulsion must be turned on. </p>
-<p>Exchange-repulsion must be enabled to compute overlap-based electrostatic and dispersion damping. Overlap integrals need to be computed for these damping types. </p>
-</td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a7bbdafa442aaefa9561740540b1c75ebaf0a6567aa3ffd1e7bf94f6bbdbb63605"></a>EFP_RESULT_GRADIENT_NOT_REQUESTED</em>&nbsp;</td><td>
 <p>Gradient computation was not requested. </p>
 </td></tr>
@@ -356,7 +351,7 @@ Functions</h2></td></tr>
 <p>EFP/EFP exchange repulsion. </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a94612d24119e0ea0db5bb21dd717e3a4af893006ed9c5f50b4c21add7a0941ee6"></a>EFP_TERM_CHTR</em>&nbsp;</td><td>
-<p>EFP/EFP charge transfer, reserved. </p>
+<p>EFP/EFP charge transfer, reserved for future use. </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a94612d24119e0ea0db5bb21dd717e3a4a908463973fee213b9dc947e6a0632628"></a>EFP_TERM_AI_ELEC</em>&nbsp;</td><td>
 <p>Ab initio/EFP electrostatics. </p>
@@ -365,13 +360,13 @@ Functions</h2></td></tr>
 <p>Ab initio/EFP polarization. </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a94612d24119e0ea0db5bb21dd717e3a4adc4d9202001ddd5c7ce8abed749cd90f"></a>EFP_TERM_AI_DISP</em>&nbsp;</td><td>
-<p>Ab initio/EFP dispersion. </p>
+<p>Ab initio/EFP dispersion, reserved for future use. </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a94612d24119e0ea0db5bb21dd717e3a4a794369f030040977f10e5b064b31b9c0"></a>EFP_TERM_AI_XR</em>&nbsp;</td><td>
-<p>Ab initio/EFP exchange repulsion. </p>
+<p>Ab initio/EFP exchange repulsion, reserved for future use. </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a94612d24119e0ea0db5bb21dd717e3a4a298d03b8545b0fda01297bfbbf5129fc"></a>EFP_TERM_AI_CHTR</em>&nbsp;</td><td>
-<p>Ab initio/EFP charge transfer, reserved. </p>
+<p>Ab initio/EFP charge transfer, reserved for future use. </p>
 </td></tr>
 </table>
 </dd>
@@ -421,7 +416,7 @@ Functions</h2></td></tr>
 <p>Fragment-fragment electrostatic damping type. </p>
 <dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
 <tr><td valign="top"><em><a class="anchor" id="a3ca6956007970c8cf059f3b169e0234ea3d950c454912a5e7d13f7834687d3560"></a>EFP_ELEC_DAMP_SCREEN</em>&nbsp;</td><td>
-<p>SCREEN controlled damping (default). </p>
+<p>SCREEN-controlled damping (default). </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a3ca6956007970c8cf059f3b169e0234ea5a90973d33c79d8b702af6f506e8bad8"></a>EFP_ELEC_DAMP_OVERLAP</em>&nbsp;</td><td>
 <p>Overlap-based damping. </p>
@@ -1236,7 +1231,7 @@ Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 21 2012 16:22:24 for libefp by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 31 2012 17:36:37 for libefp by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>
