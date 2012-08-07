@@ -245,7 +245,7 @@ Functions</h2></td></tr>
 <p>Compute electric field form electrons in the specified points. </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">n_pt</td><td>Number of points in <em>xyz</em> array. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n_pt</td><td>Number of points in <code>xyz</code> array. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">xyz</td><td>Coordinates of points where electric field should be computed. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">field</td><td>Computed <em>x</em> <em>y</em> <em>z</em> components of electric field. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">user_data</td><td>User data which was specified during initialization.</td></tr>
@@ -607,8 +607,8 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">efp</td><td>The efp structure. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">n_atoms</td><td>Number of atoms in <em>ab</em> <em>initio</em> region. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">znuc</td><td>Array of <em>n_atoms</em> elements with atom nuclear charges. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">xyz</td><td>Array of [3 * <em>n_atoms</em>] elements with <em>x</em> <em>y</em> <em>z</em> coordinates of atom positions.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">znuc</td><td>Array of <code>n_atoms</code> elements with atom nuclear charges. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xyz</td><td>Array of [3 * <code>n_atoms</code>] elements with <em>x</em> <em>y</em> <em>z</em> coordinates of atom positions.</td></tr>
   </table>
   </dd>
 </dl>
@@ -652,11 +652,12 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">efp</td><td>The efp structure. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">coord_type</td><td>Specifies the type of coordinates in the <em>coord</em> array (see <a class="el" href="efp_8h.html#a4427908f5cfc33ca2a7b42391375407f" title="Describes the way fragment coordinates are specified.">efp_coord_type</a>). </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">coord</td><td>If <em>coord_type</em> is <em>EFP_COORD_TYPE_XYZABC</em> then for each fragment this array should contain <em>x</em> <em>y</em> <em>z</em> components of the center of mass position and three Euler rotation angles representing orientation of a fragment. The size of the <em>coord</em> array must be at least [6 * <em>n</em>] elements, where <em>n</em> is the number of fragments.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">coord</td><td>Array of fragment coordinates.</td></tr>
   </table>
   </dd>
 </dl>
-<p>If <em>coord_type</em> is EFP_COORD_TYPE_POINTS then for each fragment coordinates of 3 points in space must be specified. For each fragment point 1 and first atom of fragment are made to coincide. The vector connecting points 1 and 2 is aligned with the corresponding vector connecting fragment atoms. The plane defined by points 1, 2, and 3 is made to coincide with the corresponding fragment plane. The size of <em>coord</em> array must be at least [9 * <em>n</em>] elements, where <em>n</em> is the number of fragments. For each fragment <em>x</em> <em>y</em> <em>z</em> coordinates of 3 fragment points should be specified to setup the position and orientation of a fragment.</p>
+<p>If <code>coord_type</code> is <em>EFP_COORD_TYPE_XYZABC</em> then for each fragment the <code>coord</code> array should contain <em>x</em> <em>y</em> <em>z</em> components of the center of mass position and three Euler rotation angles representing orientation of a fragment. The size of the <em>coord</em> array must be at least [6 * <em>n</em>] elements, where <em>n</em> is the number of fragments.</p>
+<p>If <code>coord_type</code> is <em>EFP_COORD_TYPE_POINTS</em> then for each fragment the <code>coord</code> array should contain the coordinates of 3 points in space. For each fragment point 1 and first atom of fragment are made to coincide. The vector connecting points 1 and 2 is aligned with the corresponding vector connecting fragment atoms. The plane defined by points 1, 2, and 3 is made to coincide with the corresponding fragment plane. The size of the <em>coord</em> array must be at least [9 * <em>n</em>] elements, where <em>n</em> is the number of fragments. For each fragment <em>x</em> <em>y</em> <em>z</em> coordinates of 3 fragment points should be specified to setup the position and orientation of a fragment.</p>
 <dl class="section return"><dt>Returns:</dt><dd><a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba2e840136673d27ffd986fcde8ad2e670" title="Operation was successful.">EFP_RESULT_SUCCESS</a> on success or error code otherwise. </dd></dl>
 
 </div>
@@ -858,11 +859,11 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>The size of the first array (charges) must be at least [<em>n_mult</em>] elements, where <em>n_mult</em> is the corresponding first element of the array returned by the <a class="el" href="efp_8h.html#aeba0695bcb0c090c97e2ca09b7400b04" title="Get total number of EFP multipoles.">efp_get_multipole_count</a> function.</p>
-<p>The size of the second array (dipoles) must be at least [3 * <em>n_mult</em>] elements, where <em>n_mult</em> is the corresponding second element of the array returned by the <a class="el" href="efp_8h.html#aeba0695bcb0c090c97e2ca09b7400b04" title="Get total number of EFP multipoles.">efp_get_multipole_count</a> function.</p>
-<p>The size of the third array (quadrupoles) must be at least [6 * <em>n_mult</em>] elements, where <em>n_mult</em> is the corresponding third element of the array returned by the <a class="el" href="efp_8h.html#aeba0695bcb0c090c97e2ca09b7400b04" title="Get total number of EFP multipoles.">efp_get_multipole_count</a> function.</p>
+<p>The size of the first array <code>z</code>[0] (charges) must be at least [<em>n_mult</em>] elements, where <em>n_mult</em> is the corresponding first element of the array returned by the <a class="el" href="efp_8h.html#aeba0695bcb0c090c97e2ca09b7400b04" title="Get total number of EFP multipoles.">efp_get_multipole_count</a> function.</p>
+<p>The size of the second array <code>z</code>[1] (dipoles) must be at least [3 * <em>n_mult</em>] elements, where <em>n_mult</em> is the corresponding second element of the array returned by the <a class="el" href="efp_8h.html#aeba0695bcb0c090c97e2ca09b7400b04" title="Get total number of EFP multipoles.">efp_get_multipole_count</a> function.</p>
+<p>The size of the third array <code>z</code>[2] (quadrupoles) must be at least [6 * <em>n_mult</em>] elements, where <em>n_mult</em> is the corresponding third element of the array returned by the <a class="el" href="efp_8h.html#aeba0695bcb0c090c97e2ca09b7400b04" title="Get total number of EFP multipoles.">efp_get_multipole_count</a> function.</p>
 <p>Quadrupoles are stored in the following order: <em>xx</em>, <em>yy</em>, <em>zz</em>, <em>xy</em>, <em>xz</em>, <em>yz</em> </p>
-<p>The size of the fourth array (octupoles) must be at least [10 * <em>n_mult</em>] elements, where <em>n_mult</em> is the corresponding fourth element of the array returned by the <a class="el" href="efp_8h.html#aeba0695bcb0c090c97e2ca09b7400b04" title="Get total number of EFP multipoles.">efp_get_multipole_count</a> function.</p>
+<p>The size of the fourth array <code>z</code>[3] (octupoles) must be at least [10 * <em>n_mult</em>] elements, where <em>n_mult</em> is the corresponding fourth element of the array returned by the <a class="el" href="efp_8h.html#aeba0695bcb0c090c97e2ca09b7400b04" title="Get total number of EFP multipoles.">efp_get_multipole_count</a> function.</p>
 <p>Octupoles are stored in the following order: <em>xxx</em>, <em>yyy</em>, <em>zzz</em>, <em>xxy</em>, <em>xxz</em>, <em>xyy</em>, <em>yyz</em>, <em>xzz</em>, <em>yzz</em>, <em>xyz</em> </p>
 <dl class="section return"><dt>Returns:</dt><dd><a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba2e840136673d27ffd986fcde8ad2e670" title="Operation was successful.">EFP_RESULT_SUCCESS</a> on success or error code otherwise. </dd></dl>
 
@@ -1073,7 +1074,7 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">efp</td><td>The efp structure. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">frag_idx</td><td>Index of a fragment. Must be a value between zero and the total number of fragments minus one. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Size of a <em>frag_name</em> buffer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Size of a <code>frag_name</code> buffer. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">frag_name</td><td>A buffer where name of the fragment will be stored.</td></tr>
   </table>
   </dd>
@@ -1168,7 +1169,7 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">efp</td><td>The efp structure. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">frag_idx</td><td>Index of a fragment. Must be a value between zero and the total number of fragments minus one. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Size of the <em>atoms</em> array. Must be greater than or equal to the size returned by the <a class="el" href="efp_8h.html#a843af1eb33d512ad8874a5946ccbb308" title="Get the number of atoms in the specified fragment.">efp_get_frag_atom_count</a> function. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Size of the <code>atoms</code> array. Must be greater than or equal to the size returned by the <a class="el" href="efp_8h.html#a843af1eb33d512ad8874a5946ccbb308" title="Get the number of atoms in the specified fragment.">efp_get_frag_atom_count</a> function. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">atoms</td><td>Array where atom information will be stored.</td></tr>
   </table>
   </dd>
@@ -1232,7 +1233,7 @@ Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 7 2012 16:11:21 for libefp by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 7 2012 16:34:18 for libefp by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>
