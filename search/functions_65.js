@@ -16,8 +16,7 @@ var searchData=
   ['efp_5fopts_5fdefault',['efp_opts_default',['../efp_8h.html#ae078d6665079dfdb54d3f531932a648b',1,'efp.h']]],
   ['efp_5fresult_5fto_5fstring',['efp_result_to_string',['../efp_8h.html#abe229a71cfec7ddba407541e97ba1d24',1,'efp.h']]],
   ['efp_5fscf_5fupdate',['efp_scf_update',['../efp_8h.html#a23deab9ea2c2c5c92d1233ed1296e7ae',1,'efp.h']]],
-  ['efp_5fset_5fcoordinates',['efp_set_coordinates',['../efp_8h.html#a557746b2d07da91d1b6d79eede1344ed',1,'efp.h']]],
-  ['efp_5fset_5fcoordinates_5f2',['efp_set_coordinates_2',['../efp_8h.html#a43ce775d18baac407e498a9b764b57ce',1,'efp.h']]],
+  ['efp_5fset_5fcoordinates',['efp_set_coordinates',['../efp_8h.html#a8b1e1debf013b0577d7a1d685b1b63ed',1,'efp.h']]],
   ['efp_5fset_5fqm_5fatoms',['efp_set_qm_atoms',['../efp_8h.html#a5f57dce83bdf028d505b10977a9c580e',1,'efp.h']]],
   ['efp_5fshutdown',['efp_shutdown',['../efp_8h.html#a4a8d1a8b573df53cda73b2916e205cc1',1,'efp.h']]]
 ];

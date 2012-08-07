@@ -139,12 +139,13 @@ Enumerations</h2></td></tr>
 <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75ebaf0a6567aa3ffd1e7bf94f6bbdbb63605">EFP_RESULT_GRADIENT_NOT_REQUESTED</a>, 
 <br/>
 &#160;&#160;<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba6d6f5686740dd81de8aa056b40f6e84e">EFP_RESULT_PARAMETERS_MISSING</a>, 
-<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba72b5d4ee5a6758646f79b33d00c3b7b3">EFP_RESULT_INDEX_OUT_OF_RANGE</a>, 
+<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba796bb3e3996f6ce7843d5ff286d7f26f">EFP_RESULT_INCORRECT_ENUM_VALUE</a>, 
 <br/>
-&#160;&#160;<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba7741ba2c2bc1d8abc29a4a24d1c99d9d">EFP_RESULT_INVALID_ARRAY_SIZE</a>, 
-<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba0031d43e67393283bcd21ee16c50aec4">EFP_RESULT_UNSUPPORTED_SCREEN</a>, 
+&#160;&#160;<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba72b5d4ee5a6758646f79b33d00c3b7b3">EFP_RESULT_INDEX_OUT_OF_RANGE</a>, 
+<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba7741ba2c2bc1d8abc29a4a24d1c99d9d">EFP_RESULT_INVALID_ARRAY_SIZE</a>, 
 <br/>
-&#160;&#160;<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba740b2c0a94f90cb2137f3e2acca4bda6">EFP_RESULT_INCONSISTENT_TERMS</a>
+&#160;&#160;<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba0031d43e67393283bcd21ee16c50aec4">EFP_RESULT_UNSUPPORTED_SCREEN</a>, 
+<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba740b2c0a94f90cb2137f3e2acca4bda6">EFP_RESULT_INCONSISTENT_TERMS</a>
 <br/>
  }</td></tr>
 <tr class="memdesc:a7bbdafa442aaefa9561740540b1c75eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result of an operation.  <a href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">More...</a><br/></td></tr>
@@ -182,6 +183,10 @@ Enumerations</h2></td></tr>
 <br/>
  }</td></tr>
 <tr class="memdesc:a3ca6956007970c8cf059f3b169e0234e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fragment-fragment electrostatic damping type.  <a href="efp_8h.html#a3ca6956007970c8cf059f3b169e0234e">More...</a><br/></td></tr>
+<tr class="memitem:a4427908f5cfc33ca2a7b42391375407f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#a4427908f5cfc33ca2a7b42391375407f">efp_coord_type</a> { <a class="el" href="efp_8h.html#a4427908f5cfc33ca2a7b42391375407fad038541325a95dbb7cf4d8defc0853ff">EFP_COORD_TYPE_XYZABC</a> =  0, 
+<a class="el" href="efp_8h.html#a4427908f5cfc33ca2a7b42391375407fa46dbb47d510c6321ccea6b6735019270">EFP_COORD_TYPE_POINTS</a>
+ }</td></tr>
+<tr class="memdesc:a4427908f5cfc33ca2a7b42391375407f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes the way fragment coordinates are specified.  <a href="efp_8h.html#a4427908f5cfc33ca2a7b42391375407f">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a80548297baf5624c04d419da89517be7"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#a80548297baf5624c04d419da89517be7">efp_banner</a> (void)</td></tr>
@@ -192,10 +197,8 @@ Functions</h2></td></tr>
 <tr class="memdesc:ae6e83fada1d04ff030527e9582239690"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the EFP computation.  <a href="#ae6e83fada1d04ff030527e9582239690"></a><br/></td></tr>
 <tr class="memitem:a5f57dce83bdf028d505b10977a9c580e"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#a5f57dce83bdf028d505b10977a9c580e">efp_set_qm_atoms</a> (struct <a class="el" href="structefp.html">efp</a> *<a class="el" href="structefp.html">efp</a>, int n_atoms, const double *znuc, const double *xyz)</td></tr>
 <tr class="memdesc:a5f57dce83bdf028d505b10977a9c580e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update information about <em>ab</em> <em>initio</em> region.  <a href="#a5f57dce83bdf028d505b10977a9c580e"></a><br/></td></tr>
-<tr class="memitem:a557746b2d07da91d1b6d79eede1344ed"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#a557746b2d07da91d1b6d79eede1344ed">efp_set_coordinates</a> (struct <a class="el" href="structefp.html">efp</a> *<a class="el" href="structefp.html">efp</a>, const double *xyzabc)</td></tr>
-<tr class="memdesc:a557746b2d07da91d1b6d79eede1344ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update positions and orientations of effective fragments.  <a href="#a557746b2d07da91d1b6d79eede1344ed"></a><br/></td></tr>
-<tr class="memitem:a43ce775d18baac407e498a9b764b57ce"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#a43ce775d18baac407e498a9b764b57ce">efp_set_coordinates_2</a> (struct <a class="el" href="structefp.html">efp</a> *<a class="el" href="structefp.html">efp</a>, const double *pts)</td></tr>
-<tr class="memdesc:a43ce775d18baac407e498a9b764b57ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update positions and orientations of effective fragments.  <a href="#a43ce775d18baac407e498a9b764b57ce"></a><br/></td></tr>
+<tr class="memitem:a8b1e1debf013b0577d7a1d685b1b63ed"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#a8b1e1debf013b0577d7a1d685b1b63ed">efp_set_coordinates</a> (struct <a class="el" href="structefp.html">efp</a> *<a class="el" href="structefp.html">efp</a>, enum <a class="el" href="efp_8h.html#a4427908f5cfc33ca2a7b42391375407f">efp_coord_type</a> coord_type, const double *coord)</td></tr>
+<tr class="memdesc:a8b1e1debf013b0577d7a1d685b1b63ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update positions and orientations of effective fragments.  <a href="#a8b1e1debf013b0577d7a1d685b1b63ed"></a><br/></td></tr>
 <tr class="memitem:a489c9448cbf0f46d1253db4d17e9177c"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#a489c9448cbf0f46d1253db4d17e9177c">efp_get_coordinates</a> (struct <a class="el" href="structefp.html">efp</a> *<a class="el" href="structefp.html">efp</a>, int size, double *xyzabc)</td></tr>
 <tr class="memdesc:a489c9448cbf0f46d1253db4d17e9177c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get center of mass positions and Euler angles of the effective fragments.  <a href="#a489c9448cbf0f46d1253db4d17e9177c"></a><br/></td></tr>
 <tr class="memitem:a23deab9ea2c2c5c92d1233ed1296e7ae"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#a23deab9ea2c2c5c92d1233ed1296e7ae">efp_scf_update</a> (struct <a class="el" href="structefp.html">efp</a> *<a class="el" href="structefp.html">efp</a>, double *energy)</td></tr>
@@ -305,6 +308,9 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a7bbdafa442aaefa9561740540b1c75eba6d6f5686740dd81de8aa056b40f6e84e"></a>EFP_RESULT_PARAMETERS_MISSING</em>&nbsp;</td><td>
 <p>Certain EFP parameters are missing. </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a7bbdafa442aaefa9561740540b1c75eba796bb3e3996f6ce7843d5ff286d7f26f"></a>EFP_RESULT_INCORRECT_ENUM_VALUE</em>&nbsp;</td><td>
+<p>Incorrect enumeration value. </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a7bbdafa442aaefa9561740540b1c75eba72b5d4ee5a6758646f79b33d00c3b7b3"></a>EFP_RESULT_INDEX_OUT_OF_RANGE</em>&nbsp;</td><td>
 <p>Index is out of range. </p>
@@ -423,6 +429,31 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a3ca6956007970c8cf059f3b169e0234ea1f367b107d6d996b15ad0d0601e809e7"></a>EFP_ELEC_DAMP_OFF</em>&nbsp;</td><td>
 <p>No electrostatic damping. </p>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a4427908f5cfc33ca2a7b42391375407f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="efp_8h.html#a4427908f5cfc33ca2a7b42391375407f">efp_coord_type</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Describes the way fragment coordinates are specified. </p>
+<dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="a4427908f5cfc33ca2a7b42391375407fad038541325a95dbb7cf4d8defc0853ff"></a>EFP_COORD_TYPE_XYZABC</em>&nbsp;</td><td>
+<p>Coordinates of center of mass of a fragment and Euler angles. </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a4427908f5cfc33ca2a7b42391375407fa46dbb47d510c6321ccea6b6735019270"></a>EFP_COORD_TYPE_POINTS</em>&nbsp;</td><td>
+<p>Coordinates of three points belonging to a fragment. </p>
 </td></tr>
 </table>
 </dd>
@@ -585,12 +616,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a557746b2d07da91d1b6d79eede1344ed"></a>
+<a class="anchor" id="a8b1e1debf013b0577d7a1d685b1b63ed"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a> <a class="el" href="efp_8h.html#a557746b2d07da91d1b6d79eede1344ed">efp_set_coordinates</a> </td>
+          <td class="memname">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a> <a class="el" href="efp_8h.html#a8b1e1debf013b0577d7a1d685b1b63ed">efp_set_coordinates</a> </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structefp.html">efp</a> *&#160;</td>
           <td class="paramname"><em>efp</em>, </td>
@@ -598,8 +629,14 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">enum <a class="el" href="efp_8h.html#a4427908f5cfc33ca2a7b42391375407f">efp_coord_type</a>&#160;</td>
+          <td class="paramname"><em>coord_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const double *&#160;</td>
-          <td class="paramname"><em>xyzabc</em>&#160;</td>
+          <td class="paramname"><em>coord</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -614,48 +651,12 @@ Functions</h2></td></tr>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">efp</td><td>The efp structure. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">xyzabc</td><td>For each fragment specifies <em>x</em> <em>y</em> <em>z</em> components of the center of mass position and three Euler rotation angles representing orientation of a fragment.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">coord_type</td><td>Specifies the type of coordinates in the <em>coord</em> array (see <a class="el" href="efp_8h.html#a4427908f5cfc33ca2a7b42391375407f" title="Describes the way fragment coordinates are specified.">efp_coord_type</a>). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">coord</td><td>If <em>coord_type</em> is <em>EFP_COORD_TYPE_XYZABC</em> then for each fragment this array should contain <em>x</em> <em>y</em> <em>z</em> components of the center of mass position and three Euler rotation angles representing orientation of a fragment. The size of the <em>coord</em> array must be at least [6 * <em>n</em>] elements, where <em>n</em> is the number of fragments.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns:</dt><dd><a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba2e840136673d27ffd986fcde8ad2e670" title="Operation was successful.">EFP_RESULT_SUCCESS</a> on success or error code otherwise. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a43ce775d18baac407e498a9b764b57ce"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a> <a class="el" href="efp_8h.html#a43ce775d18baac407e498a9b764b57ce">efp_set_coordinates_2</a> </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structefp.html">efp</a> *&#160;</td>
-          <td class="paramname"><em>efp</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const double *&#160;</td>
-          <td class="paramname"><em>pts</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Update positions and orientations of effective fragments. </p>
-<p>This is a convenience function. It does the same as <a class="el" href="efp_8h.html#a557746b2d07da91d1b6d79eede1344ed" title="Update positions and orientations of effective fragments.">efp_set_coordinates</a>. However to specify position and orientation of each fragment it takes coordinates of 3 points in space. For each fragment point 1 and first atom of fragment are made to coincide. The vector connecting points 1 and 2 is aligned with the corresponding vector connecting fragment atoms. The plane defined by points 1, 2, and 3 is made to coincide with the corresponding fragment plane.</p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">efp</td><td>The efp structure. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pts</td><td>Array of points used to determine fragment positions and orientations. The size of this array must be at least [9 * <em>n</em>] elements, where <em>n</em> is the number of fragments. For each fragment <em>x</em> <em>y</em> <em>z</em> coordinates of 3 fragment points should be specified to setup the position and orientation of a fragment.</td></tr>
-  </table>
-  </dd>
-</dl>
+<p>If <em>coord_type</em> is EFP_COORD_TYPE_POINTS then for each fragment coordinates of 3 points in space must be specified. For each fragment point 1 and first atom of fragment are made to coincide. The vector connecting points 1 and 2 is aligned with the corresponding vector connecting fragment atoms. The plane defined by points 1, 2, and 3 is made to coincide with the corresponding fragment plane. The size of <em>coord</em> array must be at least [9 * <em>n</em>] elements, where <em>n</em> is the number of fragments. For each fragment <em>x</em> <em>y</em> <em>z</em> coordinates of 3 fragment points should be specified to setup the position and orientation of a fragment.</p>
 <dl class="section return"><dt>Returns:</dt><dd><a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba2e840136673d27ffd986fcde8ad2e670" title="Operation was successful.">EFP_RESULT_SUCCESS</a> on success or error code otherwise. </dd></dl>
 
 </div>
@@ -1231,7 +1232,7 @@ Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 31 2012 17:36:37 for libefp by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 7 2012 16:11:21 for libefp by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

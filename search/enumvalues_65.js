@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['efp_5fcoord_5ftype_5fpoints',['EFP_COORD_TYPE_POINTS',['../efp_8h.html#a4427908f5cfc33ca2a7b42391375407fa46dbb47d510c6321ccea6b6735019270',1,'efp.h']]],
+  ['efp_5fcoord_5ftype_5fxyzabc',['EFP_COORD_TYPE_XYZABC',['../efp_8h.html#a4427908f5cfc33ca2a7b42391375407fad038541325a95dbb7cf4d8defc0853ff',1,'efp.h']]],
   ['efp_5fdisp_5fdamp_5foff',['EFP_DISP_DAMP_OFF',['../efp_8h.html#aab2895f345747f006c21b846a04e0676a530fa531a8e138f211e623857f8359c6',1,'efp.h']]],
   ['efp_5fdisp_5fdamp_5foverlap',['EFP_DISP_DAMP_OVERLAP',['../efp_8h.html#aab2895f345747f006c21b846a04e0676aec5ed14d33acafa267432ff2459fe873',1,'efp.h']]],
   ['efp_5fdisp_5fdamp_5ftt',['EFP_DISP_DAMP_TT',['../efp_8h.html#aab2895f345747f006c21b846a04e0676a0dc525ead582f2ded8c7c01cff8a1a5a',1,'efp.h']]],
@@ -13,6 +15,7 @@ var searchData=
   ['efp_5fresult_5ffile_5fnot_5ffound',['EFP_RESULT_FILE_NOT_FOUND',['../efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba10957804458bc2381a94f6db4a489fab',1,'efp.h']]],
   ['efp_5fresult_5fgradient_5fnot_5frequested',['EFP_RESULT_GRADIENT_NOT_REQUESTED',['../efp_8h.html#a7bbdafa442aaefa9561740540b1c75ebaf0a6567aa3ffd1e7bf94f6bbdbb63605',1,'efp.h']]],
   ['efp_5fresult_5finconsistent_5fterms',['EFP_RESULT_INCONSISTENT_TERMS',['../efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba740b2c0a94f90cb2137f3e2acca4bda6',1,'efp.h']]],
+  ['efp_5fresult_5fincorrect_5fenum_5fvalue',['EFP_RESULT_INCORRECT_ENUM_VALUE',['../efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba796bb3e3996f6ce7843d5ff286d7f26f',1,'efp.h']]],
   ['efp_5fresult_5findex_5fout_5fof_5frange',['EFP_RESULT_INDEX_OUT_OF_RANGE',['../efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba72b5d4ee5a6758646f79b33d00c3b7b3',1,'efp.h']]],
   ['efp_5fresult_5finvalid_5farray_5fsize',['EFP_RESULT_INVALID_ARRAY_SIZE',['../efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba7741ba2c2bc1d8abc29a4a24d1c99d9d',1,'efp.h']]],
   ['efp_5fresult_5fno_5fmemory',['EFP_RESULT_NO_MEMORY',['../efp_8h.html#a7bbdafa442aaefa9561740540b1c75ebacb907792b5b65778771b2357b5bc2f44',1,'efp.h']]],
