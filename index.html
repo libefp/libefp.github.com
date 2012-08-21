@@ -102,27 +102,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">LIBEFP - The Effective Fragment Potential method implementation </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="API"></a>
-Public API Documentation</h2>
-<p>Documentation for public API is available <a href="efp_8h.html">here</a>. For additional information see <a href="http://github.com/libefp/libefp/blob/master/README.md">README</a> file.</p>
-<h2><a class="anchor" id="Repo"></a>
-Git Repository</h2>
-<p>Latest development version of code can be found in git <a href="http://github.com/libefp/libefp">repository</a>.</p>
-<h2><a class="anchor" id="EFPMD"></a>
+<div class="textblock"><h2><a class="anchor" id="intro"></a>
+Introduction</h2>
+<p><em>LIBEFP</em> is a full implementation of the Effective Fragment Potential (EFP) method (see <a href="http://dx.doi.org/10.1021/cr200093j"><em>Gordon et al., Chem. Rev., 2012</em></a>). <em>LIBEFP</em> is designed to allow developers an easy way to add EFP support to their favourite quantum chemistry software package.</p>
+<h2><a class="anchor" id="efpmd"></a>
 EFPMD package</h2>
-<p><a href="http://github.com/libefp/libefp/tree/master/efpmd">EFPMD</a> is a molecular simulation package based on <a href="http://libefp.github.com/">LIBEFP</a>. It allows to perform EFP-only molecular simulation such as geometry optimization and molecular dynamics. See <a href="http://github.com/libefp/libefp/tree/master/efpmd/README.md">README</a> file for more information on how to use the package.</p>
-<h2><a class="anchor" id="Parallel"></a>
-Parallel Performance</h2>
-<p>The EFP code is parallelized using <a href="http://www.openmp.org/">OpenMP</a> to utilize the full power of multi-core CPUs. Below is the plot of achieved parallel speedup in a single point energy computation test with a system containing 3375 EFP water molecules. The test was performed using <a href="http://github.com/libefp/libefp/tree/master/efpmd">EFPMD</a> program on a machine with two Intel Xeon X5667 CPUs.</p>
+<p><a href="http://github.com/libefp/libefp/tree/master/efpmd"><em>EFPMD</em></a> is a molecular simulation package based on <em>LIBEFP</em>. It allows you to run EFP-only molecular simulations such as geometry optimization and molecular dynamics. See <a href="http://github.com/libefp/libefp/tree/master/efpmd/README.md"><em>README</em></a> file for more information on how to use the package.</p>
+<h2><a class="anchor" id="uses"></a>
+Who uses LIBEFP</h2>
+<p><em>LIBEFP</em> is currently being used in <a href="http://www.psicode.org/"><em>PSI</em></a> (development version) and <a href="http://github.com/libefp/libefp/tree/master/efpmd"><em>EFPMD</em></a> packages.</p>
+<h2><a class="anchor" id="api"></a>
+Documentation</h2>
+<p>Documentation for public API is available <a href="efp_8h.html"><em>here</em></a>. For additional information see <a href="http://github.com/libefp/libefp/blob/master/README.md"><em>README</em></a> file.</p>
+<h2><a class="anchor" id="code"></a>
+Source code</h2>
+<p>Latest development version of code can be found in git <a href="http://github.com/libefp/libefp"><em>repository</em></a>.</p>
+<h2><a class="anchor" id="parallel"></a>
+Parallel performance</h2>
+<p>The EFP code is parallelized using <a href="http://www.openmp.org/"><em>OpenMP</em></a> to utilize the full power of multi-core CPUs. Below is the plot of achieved parallel speedup in a single point energy computation test with a system containing 3375 EFP water molecules. The test was performed using <a href="http://github.com/libefp/libefp/tree/master/efpmd"><em>EFPMD</em></a> program on a machine with two Intel Xeon X5667 CPUs.</p>
 <div class="image">
 <img src="speedup-8-core.png" alt="speedup-8-core.png"/>
 </div>
-<dl class="section copyright"><dt>Copyright:</dt><dd>Copyright (c) 2012 Ilya Kaliman. Distributed under the terms of BSD 2-clause license. See <a href="http://github.com/libefp/libefp/blob/master/LICENSE">LICENSE</a> file for details. </dd></dl>
+<dl class="section copyright"><dt>Copyright:</dt><dd>Copyright (c) 2012 Ilya Kaliman. Distributed under the terms of BSD 2-clause license. See <a href="http://github.com/libefp/libefp/blob/master/LICENSE"><em>LICENSE</em></a> file for details. </dd></dl>
 </div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 12 2012 15:24:06 for libefp by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 21 2012 17:20:14 for libefp by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

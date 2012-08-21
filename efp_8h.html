@@ -762,8 +762,8 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>If <code>coord_type</code> is <em>EFP_COORD_TYPE_XYZABC</em> then for each fragment the <code>coord</code> array should contain <em>x</em> <em>y</em> <em>z</em> components of the center of mass position and three Euler rotation angles representing orientation of a fragment. The size of the <em>coord</em> array must be at least [6 * <em>n</em>] elements, where <em>n</em> is the number of fragments.</p>
-<p>If <code>coord_type</code> is <em>EFP_COORD_TYPE_POINTS</em> then for each fragment the <code>coord</code> array should contain the coordinates of 3 points in space. For each fragment point 1 and first atom of fragment are made to coincide. The vector connecting points 1 and 2 is aligned with the corresponding vector connecting fragment atoms. The plane defined by points 1, 2, and 3 is made to coincide with the corresponding fragment plane. The size of the <em>coord</em> array must be at least [9 * <em>n</em>] elements, where <em>n</em> is the number of fragments. For each fragment <em>x</em> <em>y</em> <em>z</em> coordinates of 3 fragment points should be specified to setup the position and orientation of a fragment.</p>
+<p>If <code>coord_type</code> is <em>EFP_COORD_TYPE_XYZABC</em> then for each fragment the <code>coord</code> array should contain <em>x</em> <em>y</em> <em>z</em> components of the center of mass position and three Euler rotation angles representing orientation of a fragment. The size of the <code>coord</code> array must be at least [6 * <em>n</em>] elements, where <em>n</em> is the number of fragments.</p>
+<p>If <code>coord_type</code> is <em>EFP_COORD_TYPE_POINTS</em> then for each fragment the <code>coord</code> array should contain the coordinates of 3 points in space. For each fragment point 1 and first atom of fragment are made to coincide. The vector connecting points 1 and 2 is aligned with the corresponding vector connecting fragment atoms. The plane defined by points 1, 2, and 3 is made to coincide with the corresponding fragment plane. The size of the <code>coord</code> array must be at least [9 * <em>n</em>] elements, where <em>n</em> is the number of fragments.</p>
 <dl class="section return"><dt>Returns:</dt><dd><a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba2e840136673d27ffd986fcde8ad2e670" title="Operation was successful.">EFP_RESULT_SUCCESS</a> on success or error code otherwise. </dd></dl>
 
 </div>
@@ -1339,7 +1339,7 @@ Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 12 2012 15:24:06 for libefp by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 21 2012 17:20:14 for libefp by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>
