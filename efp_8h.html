@@ -197,6 +197,11 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a3ca6956007970c8cf059f3b169e0234e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fragment-fragment electrostatic damping type.  <a href="efp_8h.html#a3ca6956007970c8cf059f3b169e0234e">More...</a><br/></td></tr>
 <tr class="separator:a3ca6956007970c8cf059f3b169e0234e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae4354020fc20c589aeecab23b52d29a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#aae4354020fc20c589aeecab23b52d29a">efp_pol_damp</a> { <a class="el" href="efp_8h.html#aae4354020fc20c589aeecab23b52d29aaf3bd6ea6ebd0575d6f5197b6345546ec">EFP_POL_DAMP_TT</a> = 0, 
+<a class="el" href="efp_8h.html#aae4354020fc20c589aeecab23b52d29aadd2cbc2eacf6bf23beb91881ac4fdaa6">EFP_POL_DAMP_OFF</a>
+ }</td></tr>
+<tr class="memdesc:aae4354020fc20c589aeecab23b52d29a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fragment-fragment polarization damping type.  <a href="efp_8h.html#aae4354020fc20c589aeecab23b52d29a">More...</a><br/></td></tr>
+<tr class="separator:aae4354020fc20c589aeecab23b52d29a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4427908f5cfc33ca2a7b42391375407f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#a4427908f5cfc33ca2a7b42391375407f">efp_coord_type</a> { <a class="el" href="efp_8h.html#a4427908f5cfc33ca2a7b42391375407fad038541325a95dbb7cf4d8defc0853ff">EFP_COORD_TYPE_XYZABC</a> = 0, 
 <a class="el" href="efp_8h.html#a4427908f5cfc33ca2a7b42391375407fa46dbb47d510c6321ccea6b6735019270">EFP_COORD_TYPE_POINTS</a>
  }</td></tr>
@@ -480,6 +485,30 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aae4354020fc20c589aeecab23b52d29a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="efp_8h.html#aae4354020fc20c589aeecab23b52d29a">efp_pol_damp</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fragment-fragment polarization damping type. </p>
+<dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="aae4354020fc20c589aeecab23b52d29aaf3bd6ea6ebd0575d6f5197b6345546ec"></a>EFP_POL_DAMP_TT</em>&nbsp;</td><td>
+<p>Tang-Toennies like damping (default). </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aae4354020fc20c589aeecab23b52d29aadd2cbc2eacf6bf23beb91881ac4fdaa6"></a>EFP_POL_DAMP_OFF</em>&nbsp;</td><td>
+<p>No polarization damping. </p>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a4427908f5cfc33ca2a7b42391375407f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -620,10 +649,8 @@ Functions</h2></td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td>Initialized efp structure. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">opts</td><td>User defined options controlling the computation. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">callbacks</td><td>User supplied callback functions (see <a class="el" href="structefp__callbacks.html" title="Callback function information.">efp_callbacks</a>). </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">potential_file_list</td><td>Zero-terminated string with paths to the EFP parameter files separated by the new-line character '<br/>
-'. The last line must not include the new-line character. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">frag_name_list</td><td>Zero-terminated string with names of the fragments separated by the new-line character '<br/>
-'. The last line must not include the new-line character.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">potential_file_list</td><td>Zero-terminated string with paths to the EFP parameter files separated by the new-line character. The last line must not include the new-line character. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">frag_name_list</td><td>Zero-terminated string with names of the fragments separated by the new-line character. The last line must not include the new-line character.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1375,7 +1402,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 10 2012 15:06:50 for libefp by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 12 2012 12:26:01 for libefp by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>
