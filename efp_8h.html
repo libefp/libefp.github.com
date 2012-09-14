@@ -150,12 +150,13 @@ Enumerations</h2></td></tr>
 <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba6d6f5686740dd81de8aa056b40f6e84e">EFP_RESULT_PARAMETERS_MISSING</a>, 
 <br/>
 &#160;&#160;<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba796bb3e3996f6ce7843d5ff286d7f26f">EFP_RESULT_INCORRECT_ENUM_VALUE</a>, 
-<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba72b5d4ee5a6758646f79b33d00c3b7b3">EFP_RESULT_INDEX_OUT_OF_RANGE</a>, 
+<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75ebad56c28b95bf9bdef9f7d1770d7cd209c">EFP_RESULT_INVALID_ROTATION_MATRIX</a>, 
 <br/>
-&#160;&#160;<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba7741ba2c2bc1d8abc29a4a24d1c99d9d">EFP_RESULT_INVALID_ARRAY_SIZE</a>, 
-<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba0031d43e67393283bcd21ee16c50aec4">EFP_RESULT_UNSUPPORTED_SCREEN</a>, 
+&#160;&#160;<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba72b5d4ee5a6758646f79b33d00c3b7b3">EFP_RESULT_INDEX_OUT_OF_RANGE</a>, 
+<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba7741ba2c2bc1d8abc29a4a24d1c99d9d">EFP_RESULT_INVALID_ARRAY_SIZE</a>, 
 <br/>
-&#160;&#160;<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba740b2c0a94f90cb2137f3e2acca4bda6">EFP_RESULT_INCONSISTENT_TERMS</a>
+&#160;&#160;<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba0031d43e67393283bcd21ee16c50aec4">EFP_RESULT_UNSUPPORTED_SCREEN</a>, 
+<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba740b2c0a94f90cb2137f3e2acca4bda6">EFP_RESULT_INCONSISTENT_TERMS</a>
 <br/>
  }</td></tr>
 <tr class="memdesc:a7bbdafa442aaefa9561740540b1c75eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result of an operation.  <a href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">More...</a><br/></td></tr>
@@ -202,16 +203,15 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:aae4354020fc20c589aeecab23b52d29a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fragment-fragment polarization damping type.  <a href="efp_8h.html#aae4354020fc20c589aeecab23b52d29a">More...</a><br/></td></tr>
 <tr class="separator:aae4354020fc20c589aeecab23b52d29a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4427908f5cfc33ca2a7b42391375407f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#a4427908f5cfc33ca2a7b42391375407f">efp_coord_type</a> { <a class="el" href="efp_8h.html#a4427908f5cfc33ca2a7b42391375407fad038541325a95dbb7cf4d8defc0853ff">EFP_COORD_TYPE_XYZABC</a> = 0, 
-<a class="el" href="efp_8h.html#a4427908f5cfc33ca2a7b42391375407fa46dbb47d510c6321ccea6b6735019270">EFP_COORD_TYPE_POINTS</a>
+<tr class="memitem:a4427908f5cfc33ca2a7b42391375407f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#a4427908f5cfc33ca2a7b42391375407f">efp_coord_type</a> { <br/>
+&#160;&#160;<a class="el" href="efp_8h.html#a4427908f5cfc33ca2a7b42391375407fad038541325a95dbb7cf4d8defc0853ff">EFP_COORD_TYPE_XYZABC</a> = 0, 
+<a class="el" href="efp_8h.html#a4427908f5cfc33ca2a7b42391375407fa46dbb47d510c6321ccea6b6735019270">EFP_COORD_TYPE_POINTS</a>, 
+<br/>
+&#160;&#160;<a class="el" href="efp_8h.html#a4427908f5cfc33ca2a7b42391375407fa3fcb97777aa068cabf0b9b8bb0a183cf">EFP_COORD_TYPE_ROTMAT</a>
+<br/>
  }</td></tr>
 <tr class="memdesc:a4427908f5cfc33ca2a7b42391375407f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes the way fragment coordinates are specified.  <a href="efp_8h.html#a4427908f5cfc33ca2a7b42391375407f">More...</a><br/></td></tr>
 <tr class="separator:a4427908f5cfc33ca2a7b42391375407f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3507c73297df1600bd958533189b0aa4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#a3507c73297df1600bd958533189b0aa4">efp_grad_type</a> { <a class="el" href="efp_8h.html#a3507c73297df1600bd958533189b0aa4a714b0dc05cada0a4141dd8f87729d25d">EFP_GRAD_TYPE_TORQUE</a> = 0, 
-<a class="el" href="efp_8h.html#a3507c73297df1600bd958533189b0aa4a2b82815fc166ef6f197142a66ff28b38">EFP_GRAD_TYPE_DERIVATIVE</a>
- }</td></tr>
-<tr class="memdesc:a3507c73297df1600bd958533189b0aa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies output format of the gradient.  <a href="efp_8h.html#a3507c73297df1600bd958533189b0aa4">More...</a><br/></td></tr>
-<tr class="separator:a3507c73297df1600bd958533189b0aa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -254,9 +254,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a90b542f2392be9e0d47e0a0f41779c1e"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#a90b542f2392be9e0d47e0a0f41779c1e">efp_get_energy</a> (struct <a class="el" href="structefp.html">efp</a> *<a class="el" href="structefp.html">efp</a>, struct <a class="el" href="structefp__energy.html">efp_energy</a> *energy)</td></tr>
 <tr class="memdesc:a90b542f2392be9e0d47e0a0f41779c1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get computed energy components.  <a href="#a90b542f2392be9e0d47e0a0f41779c1e"></a><br/></td></tr>
 <tr class="separator:a90b542f2392be9e0d47e0a0f41779c1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8341e3358eda2eb3aef79786645a2954"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#a8341e3358eda2eb3aef79786645a2954">efp_get_gradient</a> (struct <a class="el" href="structefp.html">efp</a> *<a class="el" href="structefp.html">efp</a>, enum <a class="el" href="efp_8h.html#a3507c73297df1600bd958533189b0aa4">efp_grad_type</a> grad_type, int n_frags, double *grad)</td></tr>
-<tr class="memdesc:a8341e3358eda2eb3aef79786645a2954"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get computed EFP energy gradient.  <a href="#a8341e3358eda2eb3aef79786645a2954"></a><br/></td></tr>
-<tr class="separator:a8341e3358eda2eb3aef79786645a2954"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5645eb03aa75f2dbf2c3c693bdc06ae"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#ae5645eb03aa75f2dbf2c3c693bdc06ae">efp_get_gradient</a> (struct <a class="el" href="structefp.html">efp</a> *<a class="el" href="structefp.html">efp</a>, int n_frags, double *grad)</td></tr>
+<tr class="memdesc:ae5645eb03aa75f2dbf2c3c693bdc06ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get computed EFP energy gradient.  <a href="#ae5645eb03aa75f2dbf2c3c693bdc06ae"></a><br/></td></tr>
+<tr class="separator:ae5645eb03aa75f2dbf2c3c693bdc06ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accf8de63434509360cf09a4d1d0cb6c4"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#accf8de63434509360cf09a4d1d0cb6c4">efp_get_qm_gradient</a> (struct <a class="el" href="structefp.html">efp</a> *<a class="el" href="structefp.html">efp</a>, int n_atoms, double *grad)</td></tr>
 <tr class="memdesc:accf8de63434509360cf09a4d1d0cb6c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the gradient on atoms in <em>ab</em> <em>initio</em> subsystem due to EFP interaction.  <a href="#accf8de63434509360cf09a4d1d0cb6c4"></a><br/></td></tr>
 <tr class="separator:accf8de63434509360cf09a4d1d0cb6c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -363,6 +363,9 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a7bbdafa442aaefa9561740540b1c75eba796bb3e3996f6ce7843d5ff286d7f26f"></a>EFP_RESULT_INCORRECT_ENUM_VALUE</em>&nbsp;</td><td>
 <p>Incorrect enumeration value. </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a7bbdafa442aaefa9561740540b1c75ebad56c28b95bf9bdef9f7d1770d7cd209c"></a>EFP_RESULT_INVALID_ROTATION_MATRIX</em>&nbsp;</td><td>
+<p>Invalid rotation matrix specified. </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a7bbdafa442aaefa9561740540b1c75eba72b5d4ee5a6758646f79b33d00c3b7b3"></a>EFP_RESULT_INDEX_OUT_OF_RANGE</em>&nbsp;</td><td>
 <p>Index is out of range. </p>
@@ -527,29 +530,8 @@ Functions</h2></td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a4427908f5cfc33ca2a7b42391375407fa46dbb47d510c6321ccea6b6735019270"></a>EFP_COORD_TYPE_POINTS</em>&nbsp;</td><td>
 <p>Coordinates of three points belonging to a fragment. </p>
 </td></tr>
-</table>
-</dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a3507c73297df1600bd958533189b0aa4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="efp_8h.html#a3507c73297df1600bd958533189b0aa4">efp_grad_type</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Specifies output format of the gradient. </p>
-<dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
-<tr><td valign="top"><em><a class="anchor" id="a3507c73297df1600bd958533189b0aa4a714b0dc05cada0a4141dd8f87729d25d"></a>EFP_GRAD_TYPE_TORQUE</em>&nbsp;</td><td>
-<p>Store torque. </p>
-</td></tr>
-<tr><td valign="top"><em><a class="anchor" id="a3507c73297df1600bd958533189b0aa4a2b82815fc166ef6f197142a66ff28b38"></a>EFP_GRAD_TYPE_DERIVATIVE</em>&nbsp;</td><td>
-<p>Store derivatives of energy by Euler angles. </p>
+<tr><td valign="top"><em><a class="anchor" id="a4427908f5cfc33ca2a7b42391375407fa3fcb97777aa068cabf0b9b8bb0a183cf"></a>EFP_COORD_TYPE_ROTMAT</em>&nbsp;</td><td>
+<p>Coordinates of the center of mass of a fragment and rotation matrix. </p>
 </td></tr>
 </table>
 </dd>
@@ -835,6 +817,7 @@ Functions</h2></td></tr>
 </dl>
 <p>If <code>coord_type</code> is <em>EFP_COORD_TYPE_XYZABC</em> then for each fragment the <code>coord</code> array should contain <em>x</em> <em>y</em> <em>z</em> components of the center of mass position and three Euler rotation angles representing orientation of a fragment. The size of the <code>coord</code> array must be at least [6 * <em>n</em>] elements, where <em>n</em> is the number of fragments.</p>
 <p>If <code>coord_type</code> is <em>EFP_COORD_TYPE_POINTS</em> then for each fragment the <code>coord</code> array should contain the coordinates of 3 points in space. For each fragment point 1 and first atom of fragment are made to coincide. The vector connecting points 1 and 2 is aligned with the corresponding vector connecting fragment atoms. The plane defined by points 1, 2, and 3 is made to coincide with the corresponding fragment plane. The size of the <code>coord</code> array must be at least [9 * <em>n</em>] elements, where <em>n</em> is the number of fragments.</p>
+<p>If <code>coord_type</code> is <em>EFP_COORD_TYPE_ROTMAT</em> then for each fragment the <code>coord</code> array should contain <em>x</em> <em>y</em> <em>z</em> components of the center of mass position and nine elements of the rotation matrix representing orientation of a fragment. The size of the <code>coord</code> array must be at least [12 * <em>n</em>] elements, where <em>n</em> is the number of fragments.</p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba2e840136673d27ffd986fcde8ad2e670" title="Operation was successful.">EFP_RESULT_SUCCESS</a> on success or error code otherwise. </dd></dl>
 
 </div>
@@ -1077,7 +1060,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a8341e3358eda2eb3aef79786645a2954"></a>
+<a class="anchor" id="ae5645eb03aa75f2dbf2c3c693bdc06ae"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1086,12 +1069,6 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structefp.html">efp</a> *&#160;</td>
           <td class="paramname"><em>efp</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">enum <a class="el" href="efp_8h.html#a3507c73297df1600bd958533189b0aa4">efp_grad_type</a>&#160;</td>
-          <td class="paramname"><em>grad_type</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1117,7 +1094,6 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">efp</td><td>The efp structure. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">grad_type</td><td>Format of the returned gradient. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">n_frags</td><td>Expected number of fragments. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">grad</td><td>For each fragment <em>x</em> <em>y</em> <em>z</em> components of negative force and torque will be written to this array. The size of this array must be at least [3 * <code>n_frags</code>] elements.</td></tr>
   </table>
@@ -1402,7 +1378,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 12 2012 12:26:01 for libefp by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 14 2012 14:46:33 for libefp by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

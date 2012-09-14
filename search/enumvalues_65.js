@@ -1,6 +1,7 @@
 var searchData=
 [
   ['efp_5fcoord_5ftype_5fpoints',['EFP_COORD_TYPE_POINTS',['../efp_8h.html#a4427908f5cfc33ca2a7b42391375407fa46dbb47d510c6321ccea6b6735019270',1,'efp.h']]],
+  ['efp_5fcoord_5ftype_5frotmat',['EFP_COORD_TYPE_ROTMAT',['../efp_8h.html#a4427908f5cfc33ca2a7b42391375407fa3fcb97777aa068cabf0b9b8bb0a183cf',1,'efp.h']]],
   ['efp_5fcoord_5ftype_5fxyzabc',['EFP_COORD_TYPE_XYZABC',['../efp_8h.html#a4427908f5cfc33ca2a7b42391375407fad038541325a95dbb7cf4d8defc0853ff',1,'efp.h']]],
   ['efp_5fdisp_5fdamp_5foff',['EFP_DISP_DAMP_OFF',['../efp_8h.html#aab2895f345747f006c21b846a04e0676a530fa531a8e138f211e623857f8359c6',1,'efp.h']]],
   ['efp_5fdisp_5fdamp_5foverlap',['EFP_DISP_DAMP_OVERLAP',['../efp_8h.html#aab2895f345747f006c21b846a04e0676aec5ed14d33acafa267432ff2459fe873',1,'efp.h']]],
@@ -8,8 +9,6 @@ var searchData=
   ['efp_5felec_5fdamp_5foff',['EFP_ELEC_DAMP_OFF',['../efp_8h.html#a3ca6956007970c8cf059f3b169e0234ea1f367b107d6d996b15ad0d0601e809e7',1,'efp.h']]],
   ['efp_5felec_5fdamp_5foverlap',['EFP_ELEC_DAMP_OVERLAP',['../efp_8h.html#a3ca6956007970c8cf059f3b169e0234ea5a90973d33c79d8b702af6f506e8bad8',1,'efp.h']]],
   ['efp_5felec_5fdamp_5fscreen',['EFP_ELEC_DAMP_SCREEN',['../efp_8h.html#a3ca6956007970c8cf059f3b169e0234ea3d950c454912a5e7d13f7834687d3560',1,'efp.h']]],
-  ['efp_5fgrad_5ftype_5fderivative',['EFP_GRAD_TYPE_DERIVATIVE',['../efp_8h.html#a3507c73297df1600bd958533189b0aa4a2b82815fc166ef6f197142a66ff28b38',1,'efp.h']]],
-  ['efp_5fgrad_5ftype_5ftorque',['EFP_GRAD_TYPE_TORQUE',['../efp_8h.html#a3507c73297df1600bd958533189b0aa4a714b0dc05cada0a4141dd8f87729d25d',1,'efp.h']]],
   ['efp_5fpol_5fdamp_5foff',['EFP_POL_DAMP_OFF',['../efp_8h.html#aae4354020fc20c589aeecab23b52d29aadd2cbc2eacf6bf23beb91881ac4fdaa6',1,'efp.h']]],
   ['efp_5fpol_5fdamp_5ftt',['EFP_POL_DAMP_TT',['../efp_8h.html#aae4354020fc20c589aeecab23b52d29aaf3bd6ea6ebd0575d6f5197b6345546ec',1,'efp.h']]],
   ['efp_5fresult_5fargument_5fnull',['EFP_RESULT_ARGUMENT_NULL',['../efp_8h.html#a7bbdafa442aaefa9561740540b1c75ebaba5ca941f3a142d1bfc30877c2dd2901',1,'efp.h']]],
@@ -22,6 +21,7 @@ var searchData=
   ['efp_5fresult_5fincorrect_5fenum_5fvalue',['EFP_RESULT_INCORRECT_ENUM_VALUE',['../efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba796bb3e3996f6ce7843d5ff286d7f26f',1,'efp.h']]],
   ['efp_5fresult_5findex_5fout_5fof_5frange',['EFP_RESULT_INDEX_OUT_OF_RANGE',['../efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba72b5d4ee5a6758646f79b33d00c3b7b3',1,'efp.h']]],
   ['efp_5fresult_5finvalid_5farray_5fsize',['EFP_RESULT_INVALID_ARRAY_SIZE',['../efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba7741ba2c2bc1d8abc29a4a24d1c99d9d',1,'efp.h']]],
+  ['efp_5fresult_5finvalid_5frotation_5fmatrix',['EFP_RESULT_INVALID_ROTATION_MATRIX',['../efp_8h.html#a7bbdafa442aaefa9561740540b1c75ebad56c28b95bf9bdef9f7d1770d7cd209c',1,'efp.h']]],
   ['efp_5fresult_5fno_5fmemory',['EFP_RESULT_NO_MEMORY',['../efp_8h.html#a7bbdafa442aaefa9561740540b1c75ebacb907792b5b65778771b2357b5bc2f44',1,'efp.h']]],
   ['efp_5fresult_5fnot_5fimplemented',['EFP_RESULT_NOT_IMPLEMENTED',['../efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba482c991522b17d6d025bf2d1c5a5cb94',1,'efp.h']]],
   ['efp_5fresult_5fnot_5finitialized',['EFP_RESULT_NOT_INITIALIZED',['../efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba42f4f7a186217b2687643ef658e61f60',1,'efp.h']]],
