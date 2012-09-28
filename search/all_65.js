@@ -25,6 +25,8 @@ var searchData=
   ['efp_5fget_5ffrag_5fatom_5fcount',['efp_get_frag_atom_count',['../efp_8h.html#a843af1eb33d512ad8874a5946ccbb308',1,'efp.h']]],
   ['efp_5fget_5ffrag_5fatoms',['efp_get_frag_atoms',['../efp_8h.html#aa16cb80ff859091c0e7b328bd482b8f8',1,'efp.h']]],
   ['efp_5fget_5ffrag_5fcount',['efp_get_frag_count',['../efp_8h.html#aa142e142ae5d53e66e2318636e5307c2',1,'efp.h']]],
+  ['efp_5fget_5ffrag_5finertia',['efp_get_frag_inertia',['../efp_8h.html#a67ea05af0e4a1159d3ab4515eed05d90',1,'efp.h']]],
+  ['efp_5fget_5ffrag_5fmass',['efp_get_frag_mass',['../efp_8h.html#a0812f6494465c6bde5f6e24c438444fb',1,'efp.h']]],
   ['efp_5fget_5ffrag_5fname',['efp_get_frag_name',['../efp_8h.html#ae8394d5138d79835242ceb62acc3eb7f',1,'efp.h']]],
   ['efp_5fget_5fgradient',['efp_get_gradient',['../efp_8h.html#ae5645eb03aa75f2dbf2c3c693bdc06ae',1,'efp.h']]],
   ['efp_5fget_5fmultipole_5fcount',['efp_get_multipole_count',['../efp_8h.html#aeba0695bcb0c090c97e2ca09b7400b04',1,'efp.h']]],

@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta name="description" content="Libefp is an easy to use implementation of the Effective Fragment Potential method (EFP)."/>
+<meta name="description" content="Libefp is an easy to use implementation of the Effective Fragment Potential (EFP) method."/>
 <meta name="google-site-verification" content="Dpd42IECkFRsx1SRF1e70E9Qn_fQgHux2QbMFmBhvt4" />
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
@@ -269,6 +269,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ae8394d5138d79835242ceb62acc3eb7f"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#ae8394d5138d79835242ceb62acc3eb7f">efp_get_frag_name</a> (struct <a class="el" href="structefp.html">efp</a> *<a class="el" href="structefp.html">efp</a>, int frag_idx, int size, char *frag_name)</td></tr>
 <tr class="memdesc:ae8394d5138d79835242ceb62acc3eb7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the specified effective fragment.  <a href="#ae8394d5138d79835242ceb62acc3eb7f"></a><br/></td></tr>
 <tr class="separator:ae8394d5138d79835242ceb62acc3eb7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0812f6494465c6bde5f6e24c438444fb"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#a0812f6494465c6bde5f6e24c438444fb">efp_get_frag_mass</a> (struct <a class="el" href="structefp.html">efp</a> *<a class="el" href="structefp.html">efp</a>, int frag_idx, double *mass_out)</td></tr>
+<tr class="memdesc:a0812f6494465c6bde5f6e24c438444fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get total mass of a fragment.  <a href="#a0812f6494465c6bde5f6e24c438444fb"></a><br/></td></tr>
+<tr class="separator:a0812f6494465c6bde5f6e24c438444fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67ea05af0e4a1159d3ab4515eed05d90"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#a67ea05af0e4a1159d3ab4515eed05d90">efp_get_frag_inertia</a> (struct <a class="el" href="structefp.html">efp</a> *<a class="el" href="structefp.html">efp</a>, int frag_idx, double *inertia_out)</td></tr>
+<tr class="memdesc:a67ea05af0e4a1159d3ab4515eed05d90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get fragment principal moments of inertia.  <a href="#a67ea05af0e4a1159d3ab4515eed05d90"></a><br/></td></tr>
+<tr class="separator:a67ea05af0e4a1159d3ab4515eed05d90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a843af1eb33d512ad8874a5946ccbb308"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#a843af1eb33d512ad8874a5946ccbb308">efp_get_frag_atom_count</a> (struct <a class="el" href="structefp.html">efp</a> *<a class="el" href="structefp.html">efp</a>, int frag_idx, int *n_atoms)</td></tr>
 <tr class="memdesc:a843af1eb33d512ad8874a5946ccbb308"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of atoms in the specified fragment.  <a href="#a843af1eb33d512ad8874a5946ccbb308"></a><br/></td></tr>
 <tr class="separator:a843af1eb33d512ad8874a5946ccbb308"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1236,6 +1242,92 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a0812f6494465c6bde5f6e24c438444fb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a> efp_get_frag_mass </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structefp.html">efp</a> *&#160;</td>
+          <td class="paramname"><em>efp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frag_idx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>mass_out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get total mass of a fragment. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">efp</td><td>The efp structure. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">frag_idx</td><td>Index of a fragment. Must be a value between zero and the total number of fragments minus one. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">mass_out</td><td>Output mass value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba2e840136673d27ffd986fcde8ad2e670" title="Operation was successful.">EFP_RESULT_SUCCESS</a> on success or error code otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a67ea05af0e4a1159d3ab4515eed05d90"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">efp_result</a> efp_get_frag_inertia </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structefp.html">efp</a> *&#160;</td>
+          <td class="paramname"><em>efp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frag_idx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>inertia_out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get fragment principal moments of inertia. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">efp</td><td>The efp structure. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">frag_idx</td><td>Index of a fragment. Must be a value between zero and the total number of fragments minus one. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">inertia_out</td><td>Array of 3 elements where principal moments of inertia of a fragment will be stored.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba2e840136673d27ffd986fcde8ad2e670" title="Operation was successful.">EFP_RESULT_SUCCESS</a> on success or error code otherwise. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a843af1eb33d512ad8874a5946ccbb308"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1381,7 +1473,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 15 2012 15:46:55 for libefp by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 28 2012 16:31:26 for libefp by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>
