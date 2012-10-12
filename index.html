@@ -89,19 +89,41 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="section user"><dt>Introduction</dt><dd></dd></dl>
-<p><em>LIBEFP</em> is a full implementation of the Effective Fragment Potential (EFP) method (see <a href="http://dx.doi.org/10.1021/cr200093j"><em>Gordon et al., Chem. Rev., 2012</em></a>). <em>LIBEFP</em> is designed to allow developers an easy way to add EFP support to their favourite quantum chemistry software package.</p>
+<p><em>LIBEFP</em> is a full implementation of the Effective Fragment Potential (EFP) method (see <a href="http://dx.doi.org/10.1021/cr200093j"><em>Gordon et al., Chem. Rev., 2012</em></a>). <em>LIBEFP</em> is designed to give developers of quantum chemistry software an easy way to add EFP support to their favourite quantum chemistry package.</p>
 <dl class="section user"><dt>EFPMD molecular simulation package</dt><dd></dd></dl>
-<p><a href="http://github.com/libefp/libefp/tree/master/efpmd"><em>EFPMD</em></a> is a molecular simulation package based on <em>LIBEFP</em>. It allows running EFP-only molecular simulations such as geometry optimization and molecular dynamics. <em>EFPMD</em> is a part of <em>LIBEFP</em> distribution. See <a href="http://github.com/libefp/libefp/tree/master/efpmd/README.md"><em>README</em></a> file for more information on how to use the package.</p>
+<p><a href="http://github.com/libefp/libefp/tree/master/efpmd"><em>EFPMD</em></a> is a molecular simulation package based on <em>LIBEFP</em>. Its main features include:</p>
+<ul>
+<li>Single point energy and analytical gradient calculation</li>
+</ul>
+<ul>
+<li>Geometry optimization using efficient LBFGS optimizer</li>
+</ul>
+<ul>
+<li>Molecular dynamics in NVE and NVT ensembles</li>
+</ul>
+<ul>
+<li>Seminumerical Hessian and normal mode analysis</li>
+</ul>
+<ul>
+<li>Support for simulation of periodic systems</li>
+</ul>
+<ul>
+<li>Parallelization of calculations on multi-core machines</li>
+</ul>
+<ul>
+<li>Very simple input format</li>
+</ul>
+<p><em>EFPMD</em> is a part of <em>LIBEFP</em> distribution and is compiled by default when you build <em>LIBEFP</em>. See <a href="http://github.com/libefp/libefp/tree/master/efpmd/README.md"><em>README</em></a> file for more information on how to use the package.</p>
 <dl class="section user"><dt>Library users</dt><dd></dd></dl>
-<p><em>LIBEFP</em> is currently being used in <a href="http://www.psicode.org/"><em>PSI</em></a> (development version) and <a href="http://github.com/libefp/libefp/tree/master/efpmd"><em>EFPMD</em></a> packages.</p>
+<p><em>LIBEFP</em> is currently used in <a href="http://www.psicode.org/"><em>PSI</em></a> (development version) and <a href="http://github.com/libefp/libefp/tree/master/efpmd"><em>EFPMD</em></a> packages.</p>
 <dl class="section user"><dt>Documentation</dt><dd></dd></dl>
-<p>Documentation for public API is available <a href="efp_8h.html"><em>here</em></a>. For additional information see <a href="http://github.com/libefp/libefp/blob/master/README.md"><em>README</em></a> file.</p>
+<p>Documentation for public <em>LIBEFP</em> API is available <a href="efp_8h.html"><em>here</em></a>. For installation instructions and additional information see <a href="http://github.com/libefp/libefp/blob/master/README.md"><em>README</em></a> file.</p>
 <dl class="section user"><dt>How to get the source code</dt><dd></dd></dl>
 <p>Latest development version of code can be viewed online <a href="http://github.com/libefp/libefp"><em>here</em></a>.</p>
 <p>To get the latest source tree use:</p>
 <pre class="fragment">git clone git://github.com/libefp/libefp.git
 </pre><dl class="section user"><dt>Parallel performance</dt><dd></dd></dl>
-<p>The EFP code is parallelized using <a href="http://www.openmp.org/"><em>OpenMP</em></a> to utilize the full power of multi-core CPUs. Below is the plot of achieved parallel speedup in a single point energy computation test with a system containing 3375 EFP water molecules. The test was performed using <a href="http://github.com/libefp/libefp/tree/master/efpmd"><em>EFPMD</em></a> program on a machine with two Intel Xeon X5667 CPUs.</p>
+<p><em>LIBEFP</em> is parallelized using <a href="http://www.openmp.org/"><em>OpenMP</em></a> to utilize the full power of multi-core CPUs. Below is the plot of achieved parallel speedup in a single point energy computation test with a system containing 3375 EFP water molecules. The test was performed using <a href="http://github.com/libefp/libefp/tree/master/efpmd"><em>EFPMD</em></a> program on a machine with two Intel Xeon X5667 CPUs.</p>
 <div class="image">
 <img src="speedup.png" alt="speedup.png"/>
 </div>
@@ -109,7 +131,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 28 2012 16:31:26 for libefp by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 12 2012 16:00:30 for libefp by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

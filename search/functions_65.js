@@ -21,6 +21,7 @@ var searchData=
   ['efp_5fresult_5fto_5fstring',['efp_result_to_string',['../efp_8h.html#abe229a71cfec7ddba407541e97ba1d24',1,'efp.h']]],
   ['efp_5fscf_5fupdate',['efp_scf_update',['../efp_8h.html#a23deab9ea2c2c5c92d1233ed1296e7ae',1,'efp.h']]],
   ['efp_5fset_5fcoordinates',['efp_set_coordinates',['../efp_8h.html#a8b1e1debf013b0577d7a1d685b1b63ed',1,'efp.h']]],
+  ['efp_5fset_5fperiodic_5fbox',['efp_set_periodic_box',['../efp_8h.html#a475f0f1a49edf181860c8b0688d19c78',1,'efp.h']]],
   ['efp_5fset_5fqm_5fatoms',['efp_set_qm_atoms',['../efp_8h.html#a5f57dce83bdf028d505b10977a9c580e',1,'efp.h']]],
   ['efp_5fshutdown',['efp_shutdown',['../efp_8h.html#a4a8d1a8b573df53cda73b2916e205cc1',1,'efp.h']]]
 ];
