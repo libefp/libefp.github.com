@@ -34,6 +34,7 @@ var searchData=
   ['efp_5fget_5fqm_5fatom_5fcount',['efp_get_qm_atom_count',['../efp_8h.html#ab06218298e973e9192cfa47acb8c3fa5',1,'efp.h']]],
   ['efp_5fget_5fqm_5fatoms',['efp_get_qm_atoms',['../efp_8h.html#a1a72168572303e99687be569dfe34d88',1,'efp.h']]],
   ['efp_5fget_5fqm_5fgradient',['efp_get_qm_gradient',['../efp_8h.html#accf8de63434509360cf09a4d1d0cb6c4',1,'efp.h']]],
+  ['efp_5fget_5fstress_5ftensor',['efp_get_stress_tensor',['../efp_8h.html#a1ff4be9f0779ca621c7c82c8718678c0',1,'efp.h']]],
   ['efp_5finit',['efp_init',['../efp_8h.html#a3a45041c8d6bf5375f58c4c56b04ca9f',1,'efp.h']]],
   ['efp_5fopts',['efp_opts',['../structefp__opts.html',1,'']]],
   ['efp_5fopts_5fdefault',['efp_opts_default',['../efp_8h.html#ae078d6665079dfdb54d3f531932a648b',1,'efp.h']]],
@@ -57,6 +58,7 @@ var searchData=
   ['efp_5fresult_5fnot_5finitialized',['EFP_RESULT_NOT_INITIALIZED',['../efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba42f4f7a186217b2687643ef658e61f60',1,'efp.h']]],
   ['efp_5fresult_5fparameters_5fmissing',['EFP_RESULT_PARAMETERS_MISSING',['../efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba6d6f5686740dd81de8aa056b40f6e84e',1,'efp.h']]],
   ['efp_5fresult_5fpbc_5fnot_5fsupported',['EFP_RESULT_PBC_NOT_SUPPORTED',['../efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba2d26d927f577b28cd2744b3b9161acbe',1,'efp.h']]],
+  ['efp_5fresult_5fpbc_5frequires_5fcutoff',['EFP_RESULT_PBC_REQUIRES_CUTOFF',['../efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba45fdd6ec3c60bc0958f7a477f4596c2c',1,'efp.h']]],
   ['efp_5fresult_5fpol_5fnot_5fconverged',['EFP_RESULT_POL_NOT_CONVERGED',['../efp_8h.html#a7bbdafa442aaefa9561740540b1c75ebac257107771f78489167bc708b5c82239',1,'efp.h']]],
   ['efp_5fresult_5fsuccess',['EFP_RESULT_SUCCESS',['../efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba2e840136673d27ffd986fcde8ad2e670',1,'efp.h']]],
   ['efp_5fresult_5fswf_5fcutoff_5ftoo_5fsmall',['EFP_RESULT_SWF_CUTOFF_TOO_SMALL',['../efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba13d9c1a858c990c70b25e9d5c0da07f5',1,'efp.h']]],
@@ -82,6 +84,7 @@ var searchData=
   ['efp_5fterm_5fxr',['EFP_TERM_XR',['../efp_8h.html#a94612d24119e0ea0db5bb21dd717e3a4a696c554819a727f13c321774bc841cc9',1,'efp.h']]],
   ['elec_5fdamp',['elec_damp',['../structefp__opts.html#a4490036ba76eb1d113247724e47be507',1,'efp_opts']]],
   ['electrostatic',['electrostatic',['../structefp__energy.html#a988ab761730af16e3c7d9bec9f3eaa58',1,'efp_energy']]],
+  ['enable_5fcutoff',['enable_cutoff',['../structefp__opts.html#adc137ac583ae384caecc8dac2e611c7e',1,'efp_opts']]],
   ['enable_5fpbc',['enable_pbc',['../structefp__opts.html#afb55028eb9085353d3b72b5904c7b44c',1,'efp_opts']]],
   ['exchange_5frepulsion',['exchange_repulsion',['../structefp__energy.html#a0ed7c1d95ecc98afc89f2c7e1293b6f0',1,'efp_energy']]]
 ];
