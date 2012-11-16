@@ -139,18 +139,19 @@ Enumerations</h2></td></tr>
 <a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba13d9c1a858c990c70b25e9d5c0da07f5">EFP_RESULT_SWF_CUTOFF_TOO_SMALL</a>, 
 <br/>
 &#160;&#160;<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba60f804b52c664038c512285e2f209a50">EFP_RESULT_BOX_TOO_SMALL</a>, 
-<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75ebac257107771f78489167bc708b5c82239">EFP_RESULT_POL_NOT_CONVERGED</a>, 
+<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75ebaa1fddba53198a16e229d24ed23bf111c">EFP_RESULT_NEED_THREE_ATOMS</a>, 
 <br/>
-&#160;&#160;<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba6d6f5686740dd81de8aa056b40f6e84e">EFP_RESULT_PARAMETERS_MISSING</a>, 
-<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba796bb3e3996f6ce7843d5ff286d7f26f">EFP_RESULT_INCORRECT_ENUM_VALUE</a>, 
+&#160;&#160;<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75ebac257107771f78489167bc708b5c82239">EFP_RESULT_POL_NOT_CONVERGED</a>, 
+<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba6d6f5686740dd81de8aa056b40f6e84e">EFP_RESULT_PARAMETERS_MISSING</a>, 
 <br/>
-&#160;&#160;<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75ebad56c28b95bf9bdef9f7d1770d7cd209c">EFP_RESULT_INVALID_ROTATION_MATRIX</a>, 
-<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba72b5d4ee5a6758646f79b33d00c3b7b3">EFP_RESULT_INDEX_OUT_OF_RANGE</a>, 
+&#160;&#160;<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba796bb3e3996f6ce7843d5ff286d7f26f">EFP_RESULT_INCORRECT_ENUM_VALUE</a>, 
+<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75ebad56c28b95bf9bdef9f7d1770d7cd209c">EFP_RESULT_INVALID_ROTATION_MATRIX</a>, 
 <br/>
-&#160;&#160;<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba7741ba2c2bc1d8abc29a4a24d1c99d9d">EFP_RESULT_INVALID_ARRAY_SIZE</a>, 
-<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba0031d43e67393283bcd21ee16c50aec4">EFP_RESULT_UNSUPPORTED_SCREEN</a>, 
+&#160;&#160;<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba72b5d4ee5a6758646f79b33d00c3b7b3">EFP_RESULT_INDEX_OUT_OF_RANGE</a>, 
+<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba7741ba2c2bc1d8abc29a4a24d1c99d9d">EFP_RESULT_INVALID_ARRAY_SIZE</a>, 
 <br/>
-&#160;&#160;<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba740b2c0a94f90cb2137f3e2acca4bda6">EFP_RESULT_INCONSISTENT_TERMS</a>
+&#160;&#160;<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba0031d43e67393283bcd21ee16c50aec4">EFP_RESULT_UNSUPPORTED_SCREEN</a>, 
+<a class="el" href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eba740b2c0a94f90cb2137f3e2acca4bda6">EFP_RESULT_INCONSISTENT_TERMS</a>
 <br/>
  }</td></tr>
 <tr class="memdesc:a7bbdafa442aaefa9561740540b1c75eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result of an operation.  <a href="efp_8h.html#a7bbdafa442aaefa9561740540b1c75eb">More...</a><br/></td></tr>
@@ -369,6 +370,9 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a7bbdafa442aaefa9561740540b1c75eba60f804b52c664038c512285e2f209a50"></a>EFP_RESULT_BOX_TOO_SMALL</em>&nbsp;</td><td>
 <p>Periodic simulation box is too small. </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a7bbdafa442aaefa9561740540b1c75ebaa1fddba53198a16e229d24ed23bf111c"></a>EFP_RESULT_NEED_THREE_ATOMS</em>&nbsp;</td><td>
+<p>Fragment must contain at least three atoms. </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a7bbdafa442aaefa9561740540b1c75ebac257107771f78489167bc708b5c82239"></a>EFP_RESULT_POL_NOT_CONVERGED</em>&nbsp;</td><td>
 <p>Polarization SCF did not converge. </p>
@@ -1565,7 +1569,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 19 2012 18:31:53 for libefp by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Nov 16 2012 17:42:57 for libefp by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>
