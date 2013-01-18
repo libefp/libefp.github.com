@@ -105,19 +105,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <ul>
 <li>Very simple input format</li>
 </ul>
-<p>The Effective Fragment Potential method is much more accurate than traditional force-field based methods. For example it was shown that the EFP method accurately predicts structures and binding energies in the water-benzene complexes which is a challenge for many computational methods (see <a href="http://dx.doi.org/10.1021/jp808845b"><em>Slipchenko et al., J. Phys. Chem. A, 2009</em></a>). Thus <em>EFPMD</em> is one of the best tools for high-accuracy modeling of solid state and liquid molecular systems.</p>
+<p>The Effective Fragment Potential method is much more accurate than traditional force-field based methods. For example it was shown that the EFP method accurately predicts structures and binding energies in the water-benzene complexes which is a challenge for many computational methods (see <a href="http://dx.doi.org/10.1021/jp808845b"><em>Slipchenko et al., J. Phys. Chem. A, 2009</em></a>). With <em>EFPMD</em> we are able to perform geometry optimization on systems containing tens of thousands of atoms and nanosecond-scale molecular dynamics on systems containing thousands of atoms. <em>EFPMD</em> is one of the best currently available tools for high-accuracy modeling of solid state and liquid molecular systems.</p>
 <p><em>EFPMD</em> is a part of <em>LIBEFP</em> distribution and is compiled by default when you build <em>LIBEFP</em>. See <a href="http://github.com/libefp/libefp/tree/master/efpmd/README.md"><em>README</em></a> file for more information on how to use the package.</p>
 <dl class="section user"><dt>News</dt><dd></dd></dl>
 <p>2012-12-17 Version 0.9.6-beta released. <a href="downloads/libefp-0.9.6-beta.tar.gz"><em>Download</em></a>.</p>
 <p>2012-11-15 Version 0.9.5-beta released. <a href="downloads/libefp-0.9.5-beta.tar.gz"><em>Download</em></a>.</p>
+<dl class="section user"><dt>Documentation</dt><dd></dd></dl>
+<p>Documentation for public <em>LIBEFP</em> API is available <a href="efp_8h.html"><em>here</em></a>. For installation instructions and additional information see <a href="http://github.com/libefp/libefp/blob/master/README.md"><em>README</em></a> file.</p>
 <dl class="section user"><dt>How to get the source code</dt><dd></dd></dl>
 <p>Latest development version of code can be viewed online <a href="http://github.com/libefp/libefp"><em>here</em></a>.</p>
 <p>To get the latest development source tree use:</p>
 <pre class="fragment">git clone git://github.com/libefp/libefp.git
-</pre><dl class="section user"><dt>Library users</dt><dd></dd></dl>
-<p><em>LIBEFP</em> is currently used in <a href="http://www.psicode.org/"><em>PSI</em></a> (development version) and <a href="http://github.com/libefp/libefp/tree/master/efpmd"><em>EFPMD</em></a> packages.</p>
-<dl class="section user"><dt>Documentation</dt><dd></dd></dl>
-<p>Documentation for public <em>LIBEFP</em> API is available <a href="efp_8h.html"><em>here</em></a>. For installation instructions and additional information see <a href="http://github.com/libefp/libefp/blob/master/README.md"><em>README</em></a> file.</p>
+</pre><dl class="section user"><dt>LIBEFP is used by the following software packages</dt><dd></dd></dl>
+<ul>
+<li><a href="http://www.psicode.org/"><em>PSI</em></a> package (development version)</li>
+</ul>
+<ul>
+<li><a href="http://www.q-chem.com/"><em>Q-Chem</em></a> commercial software (old EFP implementation is replaced by an order of magnitude faster implementation based on <em>LIBEFP</em>)</li>
+</ul>
+<ul>
+<li><a href="http://github.com/libefp/libefp/tree/master/efpmd"><em>EFPMD</em></a> program (included with <em>LIBEFP</em> distribution)</li>
+</ul>
 <dl class="section user"><dt>Parallel performance</dt><dd></dd></dl>
 <p><em>LIBEFP</em> is parallelized using <a href="http://www.openmp.org/"><em>OpenMP</em></a> to utilize the full power of multi-core CPUs. Below is the plot of achieved parallel speedup in a single point energy computation test with a system containing 3375 EFP water molecules. The test was performed using <a href="http://github.com/libefp/libefp/tree/master/efpmd"><em>EFPMD</em></a> program on a machine with two Intel Xeon X5667 CPUs.</p>
 <div class="image">
@@ -127,7 +135,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 17 2012 12:39:50 for libefp by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 18 2013 15:48:54 for libefp by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>
