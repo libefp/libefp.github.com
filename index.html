@@ -82,7 +82,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="textblock"><dl class="section user"><dt>Introduction</dt><dd></dd></dl>
 <p><em>LIBEFP</em> is a full implementation of the Effective Fragment Potential (EFP) method (see <a href="http://dx.doi.org/10.1021/cr200093j"><em>Gordon et al., Chem. Rev., 2012</em></a>). <em>LIBEFP</em> is designed to give developers of quantum chemistry software an easy way to add EFP support to their favourite package.</p>
-<p>The EFP method is much more accurate than traditional force-field based techniques and can be considered on par with <em>ab initio</em> methods for the description of non-bonded interactions. At the same time it is much less resource demanding compared to traditional <em>ab initio</em> techniques. For example, it was shown that the EFP method accurately predicts structures and binding energies in the water-benzene complexes which is a challenge for many computational methods (see <a href="http://dx.doi.org/10.1021/jp808845b"><em>Slipchenko et al., J. Phys. Chem. A, 2009</em></a>).</p>
+<p>While being much less resource demanding compared to the traditional <em>ab initio</em> techniques the EFP method can be considered on par with such methods for the description of non-bonded interactions. For example, it was shown that the EFP method accurately predicts structures and binding energies in the water-benzene complexes which is a challenge for many computational methods (see <a href="http://dx.doi.org/10.1021/jp808845b"><em>Slipchenko et al., J. Phys. Chem. A, 2009</em></a>).</p>
+<p>If electronic degrees of freedom become important, e.g., in case of a chemical reaction or electronic excitation, a part of the system where the electron rearrangement takes place can be described by quantum mechanical (QM) methods in a spirit of QM/MM schemes. For example, the hybrid QM/EFP technique may be applied to describe an active site of the enzyme or a pair of reacting species in solution where the protein or solution will be described by effective fragments. The EFP creates a polarizable environment for the quantum system, i.e., the effective fragments affect the wavefunction of the quantum part through electrostatic and polarization one-electron contributions to the quantum-mechanical Hamiltonian.</p>
+<p><em>LIBEFP</em> is designed to facilitate extension of unique electronic structure methodologies designed for accurate simulations in the gas phase to condensed phases via QM/EFP.</p>
 <dl class="section user"><dt>EFPMD molecular simulation package</dt><dd></dd></dl>
 <p><a href="http://github.com/libefp/libefp/tree/master/efpmd"><em>EFPMD</em></a> is a molecular simulation package based on <em>LIBEFP</em>. Its main features include:</p>
 <ul>
@@ -106,39 +108,49 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <ul>
 <li>Very simple input format</li>
 </ul>
-<p><em>EFPMD</em> is one of the best tools for high-accuracy modeling of solid state and liquid molecular systems. It is already used for production calculations in Prof. Slipchenko's group. With <em>EFPMD</em> we are able to perform geometry optimization of systems containing tens of thousands of atoms and nanosecond-scale molecular dynamics of systems containing thousands of atoms.</p>
+<p><em>EFPMD</em> is one of the best tools for high-accuracy modeling of solid state and liquid molecular systems. With <em>EFPMD</em> we were able to perform geometry optimization of systems containing tens of thousands of atoms and nanosecond-scale molecular dynamics of systems containing thousands of atoms.</p>
 <p><em>EFPMD</em> is a part of <em>LIBEFP</em> distribution and is compiled by default when you build <em>LIBEFP</em>. See <a href="http://github.com/libefp/libefp/tree/master/efpmd/README.md"><em>README</em></a> file for more information on how to use the package.</p>
-<dl class="section user"><dt>News</dt><dd></dd></dl>
-<p>2013-03-14 Version 0.9.8-beta released. <a href="downloads/libefp-0.9.8-beta.tar.gz"><em>Download</em></a>.</p>
-<p>2013-02-18 Version 0.9.7-beta released. <a href="downloads/libefp-0.9.7-beta.tar.gz"><em>Download</em></a>.</p>
-<p>2012-12-17 Version 0.9.6-beta released. <a href="downloads/libefp-0.9.6-beta.tar.gz"><em>Download</em></a>.</p>
-<p>2012-11-15 Version 0.9.5-beta released. <a href="downloads/libefp-0.9.5-beta.tar.gz"><em>Download</em></a>.</p>
-<dl class="section user"><dt>Documentation</dt><dd></dd></dl>
-<p>Documentation for public <em>LIBEFP</em> API is available <a href="efp_8h.html"><em>here</em></a>. For installation instructions and additional information see <a href="http://github.com/libefp/libefp/blob/master/README.md"><em>README</em></a> file.</p>
-<dl class="section user"><dt>How to get the source code</dt><dd></dd></dl>
-<p>Latest development version of code can be viewed online <a href="http://github.com/libefp/libefp"><em>here</em></a>.</p>
-<p>To get the latest development source tree use:</p>
+<dl class="section user"><dt>Download</dt><dd></dd></dl>
+<p><a href="downloads/libefp-0.9.8-beta.tar.gz"><em>Download version 0.9.8-beta (2013-03-14).</em></a></p>
+<p>Older releases are not supported.</p>
+<p>Latest development version of code can be viewed online <a href="http://github.com/libefp/libefp"><em>here</em></a>. To clone it use:</p>
 <pre class="fragment">git clone git://github.com/libefp/libefp.git
-</pre><dl class="section user"><dt>LIBEFP is used by the following software packages</dt><dd></dd></dl>
+</pre><dl class="section user"><dt>Documentation</dt><dd></dd></dl>
+<p>Documentation for public <em>LIBEFP</em> API is available <a href="efp_8h.html"><em>here</em></a>. For installation instructions and additional information see <a href="http://github.com/libefp/libefp/blob/master/README.md"><em>README</em></a> file.</p>
+<dl class="section user"><dt>LIBEFP is used by the following software packages</dt><dd></dd></dl>
 <ul>
-<li><a href="http://www.psicode.org/"><em>PSI</em></a> package (development version)</li>
+<li><a href="http://www.psicode.org/"><em>PSI</em></a> package (development version).</li>
 </ul>
 <ul>
 <li><a href="http://www.q-chem.com/"><em>Q-Chem</em></a> commercial software. An old EFP implementation in Q-Chem is replaced by an order of magnitude faster implementation based on <em>LIBEFP</em>. Interface with various high-level techniques such as Coupled Cluster and Equation of Motion Coupled Cluster methods is implemented.</li>
 </ul>
 <ul>
-<li><a href="http://github.com/libefp/libefp/tree/master/efpmd"><em>EFPMD</em></a> program (included with <em>LIBEFP</em> distribution)</li>
+<li><a href="http://www.nwchem-sw.org/"><em>NWChem</em></a> (work in progress).</li>
+</ul>
+<ul>
+<li><a href="http://github.com/libefp/libefp/tree/master/efpmd"><em>EFPMD</em></a> program (included with <em>LIBEFP</em> distribution).</li>
+</ul>
+<dl class="section user"><dt>LIBEFP2 (in development)</dt><dd></dd></dl>
+<p>Features currently in development:</p>
+<ul>
+<li>A new method for the description of covalently linked fragments called flexible EFP is currently in development. It combines highly accurate EFP description of non-bonded interactions and ability to describe covalent links between the fragments by utilizing forcefield-like approach for flexible bonds. When combined with high-level <em>ab initio</em> techniques such as Coupled Cluster theory this method is particularly well suited for high accuracy description of chemical reactions in active sites of enzymes as well as calculation of various excited state properties.</li>
+</ul>
+<ul>
+<li>Dispersion and exchange-repulsion interactions between <em>ab initio</em> and EFP subsystems.</li>
+</ul>
+<ul>
+<li>Parallelization across multiple nodes through hybrid MPI/OpenMP solution.</li>
 </ul>
 <dl class="section user"><dt>Parallel performance</dt><dd></dd></dl>
 <p><em>LIBEFP</em> is parallelized using <a href="http://www.openmp.org/"><em>OpenMP</em></a> to utilize the full power of multi-core CPUs. Below is the plot of achieved parallel speedup in a single point energy computation test with a system containing 3375 EFP water molecules. The test was performed using <a href="http://github.com/libefp/libefp/tree/master/efpmd"><em>EFPMD</em></a> program on a machine with two Intel Xeon X5667 CPUs.</p>
 <div class="image">
 <img src="speedup.png" alt="speedup.png"/>
 </div>
-<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2012 Ilya Kaliman. Distributed under the terms of BSD 2-clause license. See <a href="http://github.com/libefp/libefp/blob/master/LICENSE"><em>LICENSE</em></a> file for details. </dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2012-2013 Ilya Kaliman. Distributed under the terms of BSD 2-clause license. See <a href="http://github.com/libefp/libefp/blob/master/LICENSE"><em>LICENSE</em></a> file for details. </dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 14 2013 13:29:46 for libefp by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 4 2013 23:19:37 for libefp by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>
