@@ -86,7 +86,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>If electronic degrees of freedom become important, e.g., in case of a chemical reaction or electronic excitation, a part of the system where the electron rearrangement takes place can be described by quantum mechanical (QM) methods in a spirit of QM/MM schemes. For example, the hybrid QM/EFP technique may be applied to describe an active site of the enzyme or a pair of reacting species in solution where the protein or solution will be described by effective fragments. The EFP creates a polarizable environment for the quantum system, i.e., the effective fragments affect the wavefunction of the quantum part through electrostatic and polarization one-electron contributions to the quantum-mechanical Hamiltonian.</p>
 <p><em>LIBEFP</em> is designed to facilitate extension of unique electronic structure methodologies designed for accurate simulations in the gas phase to condensed phases via QM/EFP.</p>
 <dl class="section user"><dt>EFPMD molecular simulation package</dt><dd></dd></dl>
-<p><a href="http://github.com/libefp/libefp/tree/master/efpmd"><em>EFPMD</em></a> is a molecular simulation package based on <em>LIBEFP</em>. Its main features include:</p>
+<p><a href="http://github.com/libefp/libefp/tree/libefp_1/efpmd"><em>EFPMD</em></a> is a molecular simulation package based on <em>LIBEFP</em>. Its main features include:</p>
 <ul>
 <li>Single point energy and analytical gradient calculation</li>
 </ul>
@@ -109,7 +109,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>Very simple input format</li>
 </ul>
 <p><em>EFPMD</em> is one of the best tools for high-accuracy modeling of solid state and liquid molecular systems. With <em>EFPMD</em> we were able to perform geometry optimization of systems containing tens of thousands of atoms and nanosecond-scale molecular dynamics of systems containing thousands of atoms.</p>
-<p><em>EFPMD</em> is a part of <em>LIBEFP</em> distribution and is compiled by default when you build <em>LIBEFP</em>. See <a href="http://github.com/libefp/libefp/tree/master/efpmd/README.md"><em>README</em></a> file for more information on how to use the package.</p>
+<p><em>EFPMD</em> is a part of <em>LIBEFP</em> distribution and is compiled by default when you build <em>LIBEFP</em>. See <a href="http://github.com/libefp/libefp/tree/libefp_1/efpmd/README.md"><em>README</em></a> file for more information on how to use the package.</p>
 <dl class="section user"><dt>Download</dt><dd></dd></dl>
 <p><a href="downloads/libefp-0.9.9-beta.tar.gz"><em>Download version 0.9.9-beta (2013-04-23).</em></a></p>
 <p>Older releases are not supported.</p>
@@ -120,7 +120,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li><a href="efp_8h.html"><em>API Documentation.</em></a></li>
 </ul>
 <ul>
-<li><a href="http://github.com/libefp/libefp/blob/master/README.md"><em>Installation instructions and additional information.</em></a></li>
+<li><a href="http://github.com/libefp/libefp/blob/libefp_1/README.md"><em>Installation instructions and additional information.</em></a></li>
 </ul>
 <dl class="section user"><dt>LIBEFP is used by the following software packages</dt><dd></dd></dl>
 <ul>
@@ -133,7 +133,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li><a href="http://www.nwchem-sw.org/"><em>NWChem</em></a> (work in progress).</li>
 </ul>
 <ul>
-<li><a href="http://github.com/libefp/libefp/tree/master/efpmd"><em>EFPMD</em></a> program (included with <em>LIBEFP</em> distribution).</li>
+<li><a href="http://github.com/libefp/libefp/tree/libefp_1/efpmd"><em>EFPMD</em></a> program (included with <em>LIBEFP</em> distribution).</li>
 </ul>
 <dl class="section user"><dt>LIBEFP2 (in development)</dt><dd></dd></dl>
 <p>Features currently in development:</p>
@@ -147,7 +147,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>Parallelization across multiple nodes through hybrid MPI/OpenMP solution.</li>
 </ul>
 <dl class="section user"><dt>Parallel performance</dt><dd></dd></dl>
-<p><em>LIBEFP</em> is parallelized using <a href="http://www.openmp.org/"><em>OpenMP</em></a> to utilize the full power of multi-core CPUs. Below is the plot of achieved parallel speedup in a single point energy computation test with a system containing 3375 EFP water molecules. The test was performed using <a href="http://github.com/libefp/libefp/tree/master/efpmd"><em>EFPMD</em></a> program on a machine with two Intel Xeon X5667 CPUs.</p>
+<p><em>LIBEFP</em> is parallelized using <a href="http://www.openmp.org/"><em>OpenMP</em></a> to utilize the full power of multi-core CPUs. Below is the plot of achieved parallel speedup in a single point energy computation test with a system containing 3375 EFP water molecules. The test was performed using <a href="http://github.com/libefp/libefp/tree/libefp_1/efpmd"><em>EFPMD</em></a> program on a machine with two Intel Xeon X5667 CPUs.</p>
 <div class="image">
 <img src="speedup.png" alt="speedup.png"/>
 </div>
@@ -155,7 +155,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 23 2013 12:40:08 for libefp by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 1 2013 14:17:23 for libefp by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>
