@@ -80,38 +80,31 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">The Effective Fragment Potential method implementation </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><dl class="section user"><dt>Introduction</dt><dd></dd></dl>
-<p><em>LIBEFP</em> is a full implementation of the Effective Fragment Potential (EFP) method (see <a href="http://dx.doi.org/10.1021/cr200093j"><em>Gordon et al., Chem. Rev., 2012</em></a>). <em>LIBEFP</em> is designed to give developers of quantum chemistry software an easy way to add EFP support to their favourite package.</p>
-<p>While being much less resource demanding compared to the traditional <em>ab initio</em> techniques the EFP method can be considered on par with such methods for the description of non-bonded interactions. For example, it was shown that the EFP method accurately predicts structures and binding energies in the water-benzene complexes which is a challenge for many computational methods (see <a href="http://dx.doi.org/10.1021/jp808845b"><em>Slipchenko et al., J. Phys. Chem. A, 2009</em></a>).</p>
-<p>If electronic degrees of freedom become important, e.g., in case of a chemical reaction or electronic excitation, a part of the system where the electron rearrangement takes place can be described by quantum mechanical (QM) methods in a spirit of QM/MM schemes. For example, the hybrid QM/EFP technique may be applied to describe an active site of the enzyme or a pair of reacting species in solution where the protein or solution will be described by effective fragments. The EFP creates a polarizable environment for the quantum system, i.e., the effective fragments affect the wavefunction of the quantum part through electrostatic and polarization one-electron contributions to the quantum-mechanical Hamiltonian.</p>
-<p><em>LIBEFP</em> is designed to facilitate extension of unique electronic structure methodologies designed for accurate simulations in the gas phase to condensed phases via QM/EFP.</p>
+<div class="textblock"><p><em>LIBEFP</em> is a full implementation of the Effective Fragment Potential (EFP) method (see <a href="http://dx.doi.org/10.1021/cr200093j"><em>Gordon et al., Chem. Rev., 2012</em></a>). <em>LIBEFP</em> facilitates extension of unique electronic structure methodologies designed for accurate simulations in the gas phase to condensed phases via QM/EFP. <em>LIBEFP</em> is designed to give developers of quantum chemistry software an easy way to add EFP support to their favourite package.</p>
 <dl class="section user"><dt>Reference</dt><dd></dd></dl>
 <p>See <em>LIBEFP</em> paper (<a href="http://dx.doi.org/10.1002/jcc.23375"><em>Kaliman and Slipchenko, JCC, 2013</em></a>) for more details.</p>
 <dl class="section user"><dt>EFPMD molecular simulation package</dt><dd></dd></dl>
 <p><a href="http://github.com/libefp/libefp/tree/master/efpmd"><em>EFPMD</em></a> is a molecular simulation package based on <em>LIBEFP</em>. Its main features include:</p>
 <ul>
-<li>Single point energy and analytical gradient calculation</li>
+<li>Single point energy and analytical gradient calculation.</li>
 </ul>
 <ul>
-<li>Geometry optimization using efficient LBFGS optimizer</li>
+<li>Geometry optimization using efficient LBFGS optimizer.</li>
 </ul>
 <ul>
-<li>Molecular dynamics in microcanonical (NVE), canonical (NVT), and isobaric-isothermal (NPT) ensembles</li>
+<li>Molecular dynamics in microcanonical (NVE), canonical (NVT), and isobaric-isothermal (NPT) ensembles.</li>
 </ul>
 <ul>
-<li>Seminumerical Hessian and normal mode analysis</li>
+<li>Seminumerical Hessian and normal mode analysis.</li>
 </ul>
 <ul>
-<li>Simulation of periodic systems</li>
+<li>Simulation of periodic systems.</li>
 </ul>
 <ul>
-<li>Parallelization of calculations on multi-core machines</li>
+<li>Hybrid MPI/OpenMP parallel calculations on computer clusters and supercomputers.</li>
 </ul>
-<ul>
-<li>Very simple input format</li>
-</ul>
-<p><em>EFPMD</em> is an excellent tool for high-accuracy modeling of solid state and liquid molecular systems. With <em>EFPMD</em> we were able to perform geometry optimization of systems containing tens of thousands of atoms and nanosecond-scale molecular dynamics of systems containing thousands of atoms.</p>
-<p><em>EFPMD</em> is a part of <em>LIBEFP</em> distribution and is compiled by default when you build <em>LIBEFP</em>. See <a href="http://github.com/libefp/libefp/tree/libefp_1/efpmd/README.md"><em>README</em></a> file for more information on how to use the package.</p>
+<p><em>EFPMD</em> is an excellent tool for high-accuracy modeling of solid state and liquid molecular systems. With <em>EFPMD</em> we were able to perform geometry optimization of systems containing hundreds of thousands of atoms and nanosecond-scale molecular dynamics of systems containing thousands of atoms.</p>
+<p><em>EFPMD</em> is a part of <em>LIBEFP</em> distribution and is compiled by default when you build <em>LIBEFP</em>. See <a href="http://github.com/libefp/libefp/blob/master/efpmd/README.md"><em>README</em></a> file for more information on how to use the package.</p>
 <dl class="section user"><dt>Download</dt><dd></dd></dl>
 <p><a href="downloads/libefp-0.9.9-beta.tar.gz"><em>Download version 0.9.9-beta (2013-04-23).</em></a></p>
 <p>Older releases are not supported.</p>
@@ -122,14 +115,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li><a href="efp_8h.html"><em>API Documentation (version 0.9.9-beta).</em></a></li>
 </ul>
 <ul>
-<li><a href="http://github.com/libefp/libefp/blob/libefp_1/README.md"><em>Installation instructions and additional information.</em></a></li>
+<li><a href="http://github.com/libefp/libefp/blob/master/README.md"><em>Installation instructions and additional information.</em></a></li>
 </ul>
 <dl class="section user"><dt>LIBEFP is used by the following software packages</dt><dd></dd></dl>
 <ul>
 <li><a href="http://www.psicode.org/"><em>PSI</em></a> package (development version).</li>
 </ul>
 <ul>
-<li><a href="http://www.q-chem.com/"><em>Q-Chem</em></a> commercial software. An old EFP implementation in Q-Chem is replaced by an order of magnitude faster implementation based on <em>LIBEFP</em>. Interface with various high-level techniques such as Coupled Cluster and Equation of Motion Coupled Cluster methods is implemented.</li>
+<li><a href="http://www.q-chem.com/"><em>Q-Chem</em></a> commercial software. Interface with various high-level techniques such as Coupled Cluster and Equation of Motion Coupled Cluster methods is implemented.</li>
 </ul>
 <ul>
 <li><a href="http://www.nwchem-sw.org/"><em>NWChem</em></a> (work in progress).</li>
@@ -138,18 +131,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li><a href="http://github.com/libefp/libefp/tree/master/efpmd"><em>EFPMD</em></a> program (included with <em>LIBEFP</em> distribution).</li>
 </ul>
 <dl class="section user"><dt>LIBEFP2 (in development)</dt><dd></dd></dl>
-<p>Main features of <em>LIBEFP2</em> include:</p>
+<p>Main changes in <em>LIBEFP2</em> include:</p>
 <ul>
-<li>A new method for the description of covalently linked fragments called flexible EFP. It combines highly accurate EFP description of non-bonded interactions and ability to describe covalent links between the fragments by utilizing forcefield-like approach for flexible bonds. When combined with high-level <em>ab initio</em> techniques such as Coupled Cluster theory this method is particularly well suited for high accuracy description of chemical reactions in active sites of enzymes as well as calculation of various excited state properties.</li>
+<li>A new force-field based scheme to allow description of covalently linked fragments.</li>
 </ul>
 <ul>
-<li>Dispersion and exchange-repulsion interactions between <em>ab initio</em> and EFP subsystems.</li>
+<li>Parallelization across multiple nodes using hybrid MPI/OpenMP solution.</li>
 </ul>
 <ul>
 <li>Direct polarization solver.</li>
 </ul>
 <ul>
-<li>Parallelization across multiple nodes using hybrid MPI/OpenMP solution.</li>
+<li>Dispersion and exchange-repulsion interactions between <em>ab initio</em> and EFP subsystems.</li>
 </ul>
 <dl class="section user"><dt>Parallel architecture of LIBEFP2</dt><dd></dd></dl>
 <div class="image">
@@ -164,7 +157,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 16 2013 15:14:09 for libefp by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 26 2013 11:11:57 for libefp by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>
