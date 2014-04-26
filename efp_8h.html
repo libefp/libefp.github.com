@@ -108,7 +108,7 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:aedc79307a0109e1e2dc3a33900c6ca8e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#aedc79307a0109e1e2dc3a33900c6ca8e">LIBEFP_VERSION_STRING</a>&#160;&#160;&#160;&quot;1.2.0&quot;</td></tr>
+<tr class="memitem:aedc79307a0109e1e2dc3a33900c6ca8e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="efp_8h.html#aedc79307a0109e1e2dc3a33900c6ca8e">LIBEFP_VERSION_STRING</a>&#160;&#160;&#160;&quot;1.2.1&quot;</td></tr>
 <tr class="memdesc:aedc79307a0109e1e2dc3a33900c6ca8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Version string.  <a href="#aedc79307a0109e1e2dc3a33900c6ca8e">More...</a><br/></td></tr>
 <tr class="separator:aedc79307a0109e1e2dc3a33900c6ca8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -363,7 +363,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define LIBEFP_VERSION_STRING&#160;&#160;&#160;&quot;1.2.0&quot;</td>
+          <td class="memname">#define LIBEFP_VERSION_STRING&#160;&#160;&#160;&quot;1.2.1&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -687,7 +687,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set the error log callback function. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>The callback function can be used to print verbose diagnostic messages from libefp. It can be as simple as the following:</p>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> log_cb(<span class="keyword">const</span> <span class="keywordtype">char</span> *msg)</div>
+<div class="line">{</div>
+<div class="line">    printf(<span class="stringliteral">&quot;%s\n&quot;</span>, msg);</div>
+<div class="line">}</div>
+</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>Error log callback function or NULL if none. </td></tr>
   </table>
@@ -2657,7 +2662,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 18 2014 14:21:56 for libefp by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 25 2014 17:02:43 for libefp by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

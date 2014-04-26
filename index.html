@@ -106,13 +106,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p><em>EFPMD</em> is an excellent tool for high-accuracy modeling of solid state and liquid molecular systems. With <em>EFPMD</em> we were able to perform geometry optimization of systems containing hundreds of thousands of atoms and nanosecond-scale molecular dynamics of systems containing thousands of atoms.</p>
 <p><em>EFPMD</em> is a part of <em>LIBEFP</em> distribution and is compiled by default when you build <em>LIBEFP</em>. See <a href="http://github.com/libefp/libefp/blob/master/efpmd/README.md"><em>README</em></a> file for more information on how to use the package.</p>
 <dl class="section user"><dt>Download</dt><dd></dd></dl>
-<p><a href="downloads/libefp-1.2.0.tar.gz"><em>Download version 1.2.0 (2014-03-18).</em></a></p>
+<p><a href="downloads/libefp-1.2.1.tar.gz"><em>Download version 1.2.1 (2014-04-25).</em></a></p>
 <p>Older releases are not supported.</p>
 <p>Latest development version of code can be viewed online <a href="http://github.com/libefp/libefp"><em>here</em></a>. To clone it use:</p>
 <pre class="fragment">git clone git://github.com/libefp/libefp.git
 </pre><dl class="section user"><dt>Documentation</dt><dd></dd></dl>
 <ul>
-<li><a href="efp_8h.html"><em>API Documentation (version 1.2.0).</em></a></li>
+<li><a href="efp_8h.html"><em>API Documentation (version 1.2.1).</em></a></li>
 </ul>
 <ul>
 <li><a href="http://github.com/libefp/libefp/blob/master/README.md"><em>Installation instructions and additional information.</em></a></li>
@@ -130,20 +130,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <ul>
 <li><a href="http://github.com/libefp/libefp/tree/master/efpmd"><em>EFPMD</em></a> program (included with <em>LIBEFP</em> distribution).</li>
 </ul>
-<dl class="section user"><dt>Parallel architecture of LIBEFP</dt><dd></dd></dl>
+<dl class="section user"><dt>Parallel scalability of LIBEFP</dt><dd></dd></dl>
+<p>Benchmarks were performed using <a href="http://github.com/libefp/libefp/tree/master/efpmd"><em>EFPMD</em></a> program on <a href="http://www.sdsc.edu/us/resources/gordon/">SDSC Gordon</a> supercomputer. Four OpenMP threads per MPI process where used in all runs. Speedup is relative to 1 compute process with 4 threads.</p>
 <div class="image">
-<img src="parallel-arch.png" alt="parallel-arch.png"/>
-</div>
-<dl class="section user"><dt>Parallel scalability benchmarks</dt><dd></dd></dl>
-<p>The benchmarks were performed using <a href="http://github.com/libefp/libefp/tree/master/efpmd"><em>EFPMD</em></a> program on a <a href="http://www.rcac.purdue.edu/userinfo/resources/steele/">Steele cluster</a>. Four compute threads per process where used in all runs. Benchmark was performed by running calculations using from 1 to 16 MPI slave processes. Speedup is relative to 1 compute process with 4 threads.</p>
-<div class="image">
-<img src="parallel-bench.png" alt="parallel-bench.png"/>
+<img src="speedup.png" alt="speedup.png"/>
 </div>
 <dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2012-2014 Ilya Kaliman. Distributed under the terms of BSD 2-clause license. See <a href="http://github.com/libefp/libefp/blob/master/LICENSE"><em>LICENSE</em></a> file for details. </dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 18 2014 14:21:56 for libefp by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 25 2014 17:02:43 for libefp by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>
