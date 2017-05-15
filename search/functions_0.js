@@ -6,6 +6,7 @@ var searchData=
   ['efp_5fcompute',['efp_compute',['../efp_8h.html#a89b33171a885629ee53d9e8ca6af4497',1,'efp.h']]],
   ['efp_5fcreate',['efp_create',['../efp_8h.html#a1a0d1887b9348ac9a38eea675b8a6c2d',1,'efp.h']]],
   ['efp_5fget_5fai_5fscreen',['efp_get_ai_screen',['../efp_8h.html#a22404c9ed2d8534d23cfb4e022b4e1b0',1,'efp.h']]],
+  ['efp_5fget_5fatomic_5fgradient',['efp_get_atomic_gradient',['../efp_8h.html#ad892e2c191dace083659580adbcc5f27',1,'efp.h']]],
   ['efp_5fget_5fcoordinates',['efp_get_coordinates',['../efp_8h.html#a13d33ce4a98dba5101a321192b80e6d9',1,'efp.h']]],
   ['efp_5fget_5felectric_5ffield',['efp_get_electric_field',['../efp_8h.html#a63a58729b92602978439d7a7ba5505d0',1,'efp.h']]],
   ['efp_5fget_5fenergy',['efp_get_energy',['../efp_8h.html#a90b542f2392be9e0d47e0a0f41779c1e',1,'efp.h']]],
