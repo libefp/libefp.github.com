@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ai_5fdispersion',['ai_dispersion',['../structefp__energy.html#aa9ed5a14629016c510a7929a4a1c8022',1,'efp_energy']]]
+  ['the_20effective_20fragment_20potential_20method',['The Effective Fragment Potential method',['../index.html',1,'']]]
 ];
